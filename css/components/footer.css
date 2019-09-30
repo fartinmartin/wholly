@@ -1,0 +1,15 @@
+footer>div {
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.legal {
+  background: tomato;
+  font-size: .875rem;
+}

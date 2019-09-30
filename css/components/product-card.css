@@ -1,0 +1,17 @@
+.product-card {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.product-card img {
+  object-fit: cover;
+  height: 200px;
+}
+
+.product-card h3 {
+  margin-top: 1rem;
+}
+
+.product-card p {
+  margin-top: 1rem;
+}

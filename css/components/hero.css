@@ -1,0 +1,10 @@
+.hero {
+  padding-top: var(--header-height);
+  padding-bottom: var(--padding-y);
+  background-image: url("https://source.unsplash.com/random?marijuana");
+  background-color: pink;
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}

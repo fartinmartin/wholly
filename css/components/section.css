@@ -1,0 +1,8 @@
+section {
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
+section:nth-child(odd) {
+  background: lightgray;
+}

@@ -1,0 +1,5 @@
+.container {
+  max-width: 1440px;
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+}

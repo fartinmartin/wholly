@@ -1,0 +1,31 @@
+:root {
+
+  /* colors */
+  --black: ;
+  --white: ;
+
+  --red-00: ;
+  --red-05: ;
+  --red-10: ;
+
+  --green-00: ;
+  --green-05: ;
+  --green-10: ;
+
+  --blue-00: ;
+  --blue-05: ;
+  --blue-10: ;
+
+  /* spacing */
+  --padding-x: 1rem;
+  --padding-y: 3rem;
+
+
+  --header-height: 80px;
+
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
