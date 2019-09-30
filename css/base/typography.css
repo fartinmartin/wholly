@@ -6,3 +6,10 @@ h6,
 p {
   margin: 0;
 }
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

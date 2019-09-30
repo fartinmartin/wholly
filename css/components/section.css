@@ -3,6 +3,6 @@ section {
   padding-bottom: var(--padding-y);
 }
 
-section:nth-child(odd) {
-  background: lightgray;
+section:not(:last-child) {
+  border-bottom: 1px dotted var(--black);
 }

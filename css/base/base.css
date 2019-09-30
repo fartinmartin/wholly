@@ -1,28 +1,31 @@
 :root {
-
   /* colors */
-  --black: ;
-  --white: ;
+  --black: #380000;
+  --cream: #fff4ee;
+  --white: #ffffff;
 
-  --red-00: ;
-  --red-05: ;
-  --red-10: ;
+  --red-00: #862f08;
+  --red-05: #e85a28;
+  --red-10: #f8d1ba;
 
-  --green-00: ;
-  --green-05: ;
-  --green-10: ;
+  --green-00: #016e38;
+  --green-05: #24a759;
+  --green-10: #cce1cc;
 
-  --blue-00: ;
-  --blue-05: ;
-  --blue-10: ;
+  --blue-00: #565faa;
+  --blue-05: #5b8fcb;
+  --blue-10: #d1dbf0;
 
   /* spacing */
   --padding-x: 1rem;
   --padding-y: 3rem;
 
-
   --header-height: 80px;
+}
 
+body {
+  background: var(--cream);
+  color: var(--black);
 }
 
 img {
