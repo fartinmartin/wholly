@@ -1,6 +1,8 @@
 :root {
   /* colors */
-  --black: #380000;
+  --black-00: #380000;
+  --black-05: #380000;
+  --black-10: #380000;
   --cream: #fff4ee;
   --white: #ffffff;
 
@@ -25,10 +27,15 @@
 
 body {
   background: var(--cream);
-  color: var(--black);
+  color: var(--black-00);
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-00);
 }

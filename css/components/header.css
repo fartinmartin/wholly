@@ -8,9 +8,9 @@ header {
   height: var(--header-height);
 }
 
-header>.container {
+header > .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   height: 100%;
   align-items: center;
 }
@@ -25,10 +25,10 @@ header>.container {
 }
 
 .nav li:not(:first-of-type) {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .logo {
   flex: 0 0 auto;
-  margin: 0 .5em;
+  margin: 0 3rem;
 }

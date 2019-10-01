@@ -1,0 +1,6 @@
+.cta {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  background: var(--blue-05);
+  color: var(--cream);
+}

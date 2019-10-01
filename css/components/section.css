@@ -4,5 +4,5 @@ section {
 }
 
 section:not(:last-child) {
-  border-bottom: 1px dotted var(--black);
+  border-bottom: 1px dotted var(--black-00);
 }

@@ -9,6 +9,12 @@ footer ul {
   padding: 0;
 }
 
+footer svg {
+  width: 100px;
+  height: 100px;
+  fill: currentColor;
+}
+
 .legal {
   background: tomato;
   font-size: .875rem;
