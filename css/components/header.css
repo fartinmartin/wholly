@@ -32,3 +32,25 @@ header > .container {
   flex: 0 0 auto;
   margin: 0 3rem;
 }
+
+.logo-wordmark {
+  display: none;
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .logo-lettermark {
+    display: none;
+  }
+  .logo-wordmark {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+}

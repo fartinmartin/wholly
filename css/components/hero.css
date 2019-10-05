@@ -2,31 +2,69 @@
   padding-top: var(--header-height);
   padding-bottom: var(--padding-y);
 
-  background-image: url("https://source.unsplash.com/random?marijuana");
-  background-color: pink;
-  background-blend-mode: screen;
-  background-size: cover;
-  background-position: center center;
-
   min-height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.mission {
+.hero > .container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.elevator-pitch {
   padding: var(--padding-y) 0;
 }
 
-.mission h2 {
-  font-size: 3rem;
+.elevator-pitch br {
+  margin-bottom: 0.5em;
+}
+
+.elevator-pitch h2 {
+  font-size: 2rem;
   line-height: 1;
 }
 
-.mission p {
+.elevator-pitch p {
   margin-top: 1rem;
 }
 
-.mission .cta {
+.elevator-pitch .cta {
   margin-top: 1rem;
+}
+
+.hero-product {
+  width: 40%;
+  text-align: center;
+}
+
+.hero-product img {
+  max-height: 35vh;
+  width: auto;
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .hero > .container {
+    flex-direction: row;
+  }
+  .elevator-pitch br {
+    margin-bottom: 0;
+  }
+  .elevator-pitch {
+    width: 60%;
+  }
+  .elevator-pitch h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
 }
