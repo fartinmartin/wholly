@@ -2,7 +2,3 @@ section {
   padding-top: var(--padding-y);
   padding-bottom: var(--padding-y);
 }
-
-section:not(:last-child) {
-  border-bottom: 1px dotted var(--black-00);
-}

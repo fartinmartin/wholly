@@ -6,6 +6,10 @@
   align-items: flex-start;
 }
 
+.product-card .cta {
+  margin-top: 0;
+}
+
 .product-card:not(:first-of-type) {
   margin-top: 1rem;
 }
@@ -29,10 +33,6 @@
   font-weight: 700;
   font-size: 1.5rem;
 } */
-
-.product-card p {
-  color: var(--black-10);
-}
 
 .product-card > *:last-child {
   margin-top: auto;

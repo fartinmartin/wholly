@@ -1,0 +1,41 @@
+/* .our-mission > section:first-of-type {
+  padding-top: 0;
+}
+
+.our-mission > section:last-of-type {
+  padding-bottom: 0;
+} */
+
+.our-mission h3 {
+  font-size: 2rem;
+}
+
+.our-mission .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+}
+.our-mission .text {
+  grid-column: span 3;
+}
+
+.our-mission .image {
+  grid-column: span 2;
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  position: relative;
+}
+
+.our-mission .image img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.our-mission .equity .text {
+  order: 10;
+}

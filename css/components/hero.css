@@ -28,15 +28,6 @@
   line-height: 1;
 }
 
-.elevator-pitch p {
-  margin-top: 1rem;
-  color: var(--black-10);
-}
-
-.elevator-pitch .cta {
-  margin-top: 1rem;
-}
-
 .hero-product {
   width: 40%;
   text-align: center;

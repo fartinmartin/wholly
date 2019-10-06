@@ -40,11 +40,12 @@ a {
   text-decoration: none;
   color: var(--black-00);
   padding: 0.25em 0;
-  transition: color 0.125s ease;
+  transition: all 0.125s ease;
+  border-bottom: 0.25em solid transparent;
 }
 
 a:not(.logo):not(.product-card):hover {
-  border-bottom: 0.25em solid var(--black-05);
+  border-color: var(--black-05);
   color: var(--black-10);
 }
 

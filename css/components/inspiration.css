@@ -1,4 +1,5 @@
 .inspiration > .container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,4 +9,32 @@
   font-style: italic;
   font-size: 3rem;
   line-height: 1.2;
+}
+
+.inspiration > .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - var(--padding-x) * 2);
+  height: calc(100% + var(--padding-y) * 2);
+
+  margin-top: calc(var(--padding-y) * -1);
+  margin-left: var(--padding-x);
+
+  border-top: 1px dotted var(--black-00);
+  border-bottom: 1px dotted var(--black-00);
+}
+
+.inspiration .quote {
+  margin-top: -0.25em;
+}
+
+.inspiration .cite {
+  color: var(--black-10);
+  font-size: 0.75em;
+}
+
+.inspiration strong {
+  text-decoration: underline;
 }
