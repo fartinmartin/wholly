@@ -26,6 +26,10 @@ body.no-scroll {
   transition: opacity 0.5s ease;
 }
 
+.logo {
+  max-width: 200px;
+}
+
 .logo-lettermark,
 .logo-wordmark {
   position: relative;
