@@ -1,4 +1,4 @@
-footer>div {
+footer > div {
   padding-top: var(--padding-y);
   padding-bottom: var(--padding-y);
 }
@@ -9,13 +9,17 @@ footer ul {
   padding: 0;
 }
 
+footer a {
+  padding: 0.0625em 0;
+}
+
 footer svg {
   width: 100px;
   height: 100px;
-  fill: currentColor;
+  fill: var(--black);
 }
 
 .legal {
   background: tomato;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }

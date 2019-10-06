@@ -1,6 +1,9 @@
 .product-card {
   padding: 1rem;
   background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .product-card:not(:first-of-type) {
@@ -12,10 +15,18 @@
   height: 200px;
 }
 
-.product-cta::after {
-  content: "→";
-  display: inline-block;
-  transition: transform 0.2s ease;
+.product-card h4 {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.product-card p {
+  color: var(--black-10);
+}
+
+.product-card .cta {
+  margin-top: auto;
 }
 
 .product-card:hover .product-cta::after {

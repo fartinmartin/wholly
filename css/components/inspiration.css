@@ -2,4 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-family: orpheuspro, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 1.2;
 }

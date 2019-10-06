@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://unpkg.com/sanitize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/atr2pqi.css" />
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   </head>
 
   <body>
@@ -67,23 +69,29 @@
           </h1>
         </a>
         <ul class="nav">
-          <li><a href="#">Our Products</a></li>
-          <li><a href="#">Our Mission</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Find us</a></li>
+          <li><a href="#products">Our products</a></li>
+          <li><a href="#our-mission">Our mission</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#findus">Find us</a></li>
         </ul>
+        <button id="hamburger">&#9786;</button>
       </div>
     </header>
 
     <div class="hero">
       <div class="container">
         <div class="elevator-pitch">
-          <h2>Cannabis for a better world. <br />Cannabis for a better <em>you.</em></h2>
+          <h2>
+            Cannabis for a better you. <br />Cannabis for a better
+            <em>world.</em>
+          </h2>
           <p>
             Climate change often feels like an insurmountable problem, but we
-            believe the solution is not out of reach. Wholly products are
-            produced with regenerative farming practices, so they’re as good for
-            the planet as they are for you.
+            believe the solution is not out of reach.
+          </p>
+          <p>
+            Wholly products are produced with regenerative farming practices, so
+            they’re as good for you as they are for the planet.
           </p>
           <a href="#our-mission" class="cta">Learn about our mission</a>
         </div>
@@ -93,7 +101,7 @@
       </div>
     </div>
 
-    <section class="products">
+    <section class="products" id="products">
       <div class="container">
         <div class="product-list">
           <a class="product-card" href="products/sleep.html">
@@ -136,22 +144,22 @@
     <section class="inspiration">
       <div class="container">
         <span>
-          Every time you spend money, you're casting a vote for the kind of
+          Every time you spend money, you’re casting a vote for the kind of
           world you want.
         </span>
       </div>
     </section>
 
-    <section class="our-mission">
-      <div class="container">
+    <section class="our-mission" id="our-mission">
+      <!-- <div class="container">
         <h2>Our Mission</h2>
-      </div>
+      </div> -->
 
       <section class="climate">
         <div class="container">
           <h3>Using Cannabis to Overcome Climate Challenges</h3>
           <p>
-            Modern agricultural practices have interrupted the earth's natural
+            Modern agricultural practices have interrupted the earth’s natural
             ability to recycle carbon, resulting in high concentrations of
             carbon making its way into our atmosphere and wreaking havoc on our
             global climate.
@@ -199,7 +207,7 @@
                 alt="Product image"
               />
               <h3>Farmer Name</h3>
-              <span>Farmer's Location</span>
+              <span>Farmer’s Location</span>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
                 error aut quae?
@@ -211,7 +219,7 @@
                 alt="Product image"
               />
               <h3>Employee Name</h3>
-              <span>Employee's Location</span>
+              <span>Employee’s Location</span>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
                 error aut quae?
@@ -222,81 +230,107 @@
       </section>
     </section>
 
-    <footer>
-      <div>
-        <div class="container">
-          <div class="logo"></div>
-          <div>
-            <h5>Footer menu 1</h5>
-            <ul>
-              <li><a href="#">Legal & privacy</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Find Us</a></li>
-              <li><a href="#">Press</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <a href="#"
-                  ><svg
-                    fill="currentColor"
-                    width="1792"
-                    height="1792"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="50"
-                    width="50"
-                  >
-                    <path
-                      d="M1152 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm138 0q0 164-115 279t-279 115-279-115-115-279 115-279 279-115 279 115 115 279zm108-410q0 38-27 65t-65 27-65-27-27-65 27-65 65-27 65 27 27 65zM896 266q-7 0-76.5-.5t-105.5 0-96.5 3-103 10T443 297q-50 20-88 58t-58 88q-11 29-18.5 71.5t-10 103-3 96.5 0 105.5.5 76.5-.5 76.5 0 105.5 3 96.5 10 103T297 1349q20 50 58 88t88 58q29 11 71.5 18.5t103 10 96.5 3 105.5 0 76.5-.5 76.5.5 105.5 0 96.5-3 103-10 71.5-18.5q50-20 88-58t58-88q11-29 18.5-71.5t10-103 3-96.5 0-105.5-.5-76.5.5-76.5 0-105.5-3-96.5-10-103T1495 443q-20-50-58-88t-88-58q-29-11-71.5-18.5t-103-10-96.5-3-105.5 0-76.5.5zm768 630q0 229-5 317-10 208-124 322t-322 124q-88 5-317 5t-317-5q-208-10-322-124t-124-322q-5-88-5-317t5-317q10-208 124-322t322-124q88-5 317-5t317 5q208 10 322 124t124 322q5 88 5 317z"
-                    /></svg
-                ></div>
-              </li>
-              <li>
-                <a href="#"
-                  ><svg
-                    fill="currentColor"
-                    width="1792"
-                    height="1792"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="50"
-                    width="50"
-                  >
-                    <path
-                      d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5T1369.5 1125 1185 1335.5t-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5T285 1033q33 5 61 5 43 0 85-11-112-23-185.5-111.5T172 710v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5T884 653q-8-38-8-74 0-134 94.5-228.5T1199 256q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"
-                    /></svg
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><svg
-                    fill="currentColor"
-                    width="1792"
-                    height="1792"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="50"
-                    width="50"
-                  >
-                    <path
-                      d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759H734V905H479V609h255V391q0-186 104-288.5T1115 0q147 0 228 12z"
-                    /></svg
-                ></a>
-              </li>
-            </ul>
-          </div>
+    <footer id="findus">
+      <div class="container">
+        <div class="logo"></div>
+        <div>
+          <h5>Footer menu</h5>
+          <ul>
+            <li><a href="#">Legal & privacy</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Find us</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#">
+                <svg
+                  width="1792"
+                  height="1792"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="50"
+                  width="50"
+                >
+                  <path
+                    d="M1152 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm138 0q0 164-115 279t-279 115-279-115-115-279 115-279 279-115 279 115 115 279zm108-410q0 38-27 65t-65 27-65-27-27-65 27-65 65-27 65 27 27 65zM896 266q-7 0-76.5-.5t-105.5 0-96.5 3-103 10T443 297q-50 20-88 58t-58 88q-11 29-18.5 71.5t-10 103-3 96.5 0 105.5.5 76.5-.5 76.5 0 105.5 3 96.5 10 103T297 1349q20 50 58 88t88 58q29 11 71.5 18.5t103 10 96.5 3 105.5 0 76.5-.5 76.5.5 105.5 0 96.5-3 103-10 71.5-18.5q50-20 88-58t58-88q11-29 18.5-71.5t10-103 3-96.5 0-105.5-.5-76.5.5-76.5 0-105.5-3-96.5-10-103T1495 443q-20-50-58-88t-88-58q-29-11-71.5-18.5t-103-10-96.5-3-105.5 0-76.5.5zm768 630q0 229-5 317-10 208-124 322t-322 124q-88 5-317 5t-317-5q-208-10-322-124t-124-322q-5-88-5-317t5-317q10-208 124-322t322-124q88-5 317-5t317 5q208 10 322 124t124 322q5 88 5 317z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="1792"
+                  height="1792"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="50"
+                  width="50"
+                >
+                  <path
+                    d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5T1369.5 1125 1185 1335.5t-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5T285 1033q33 5 61 5 43 0 85-11-112-23-185.5-111.5T172 710v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5T884 653q-8-38-8-74 0-134 94.5-228.5T1199 256q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="1792"
+                  height="1792"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="50"
+                  width="50"
+                >
+                  <path
+                    d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759H734V905H479V609h255V391q0-186 104-288.5T1115 0q147 0 228 12z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- <div class="legal">
-      <div class="container">
-        <img src="#" alt="Legal imagery">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi odit laborum dolorum
-          exercitationem,
-          rerum rem! Totam ab tempore ducimus nam est quia dolore numquam tempora, harum recusandae temporibus saepe ut
-          assumenda in mollitia pariatur sit dicta obcaecati quas debitis placeat illo! Ea rem recusandae magni aliquam
-          quo blanditiis minima?</p>
-      </div>
-    </div> -->
     </footer>
+
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800,
+        speedAsDuration: true
+      });
+    </script>
+    <script>
+      const header = document.querySelector("header");
+      const whenHeaderShrinks = getComputedStyle(document.body)
+        .getPropertyValue("--header-height")
+        .replace(/\D/g, "");
+
+      window.addEventListener("scroll", function() {
+        if (window.scrollY >= whenHeaderShrinks) {
+          header.classList.add("is-scrolled");
+        } else {
+          header.classList.remove("is-scrolled");
+        }
+      });
+    </script>
+    <script>
+      const nav = document.querySelector(".nav");
+      const hamburger = document.getElementById("hamburger");
+
+      hamburger.onclick = () => {
+        nav.classList.toggle("active");
+        hamburger.classList.toggle("active");
+        console.log(nav);
+        document.body.classList.toggle("no-scroll");
+      };
+
+      [...nav.children].forEach(node => {
+        node.childNodes[0].onclick = () => {
+          hamburger.click();
+        };
+      });
+    </script>
   </body>
 </html>

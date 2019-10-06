@@ -2,8 +2,9 @@
   /* colors */
   --black-00: #380000;
   --black-05: #380000;
-  --black-10: #380000;
+  --black-10: #9a7976;
   --cream: #fff4ee;
+  --cream-10: #fdfaf8;
   --white: #ffffff;
 
   --red-00: #862f08;
@@ -26,9 +27,8 @@
 }
 
 body {
-  background: var(--cream);
+  background: var(--cream-10);
   color: var(--black-00);
-  scroll-behavior: smooth;
 }
 
 img {
@@ -40,8 +40,25 @@ a {
   text-decoration: none;
   color: var(--black-00);
   padding: 0.25em 0;
+  transition: color 0.125s ease;
 }
 
-a:not(.logo, .product-card):hover {
+a:not(.logo):not(.product-card):hover {
   border-bottom: 0.25em solid var(--blue-05);
+  color: var(--black-10);
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+  :root {
+    --padding-x: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
 }
