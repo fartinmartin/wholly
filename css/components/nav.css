@@ -29,6 +29,9 @@ body.no-scroll {
 .logo {
   max-width: 200px;
 }
+.letter path {
+  fill: var(--black-00) !important;
+}
 
 .logo-lettermark,
 .logo-wordmark {

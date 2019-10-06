@@ -323,12 +323,12 @@
         if (window.scrollY >= originalHeaderHeight) {
           header.classList.add("is-scrolled");
           animLogo.setDirection(1);
-          animLogo.setSpeed(2);
+          animLogo.setSpeed(1.75);
           animLogo.play();
         } else {
           header.classList.remove("is-scrolled");
           animLogo.setDirection(-1);
-          animLogo.setSpeed(2);
+          animLogo.setSpeed(1.75);
           animLogo.play();
         }
       });
