@@ -1,6 +1,18 @@
 .cta {
   display: inline-block;
-  padding: 0.25em 0.5em;
-  background: var(--blue-05);
-  color: var(--cream);
+  padding: 0.25em 0;
+  font-weight: 500;
+  border-bottom: 0.25em solid var(--blue-05);
+}
+
+.cta::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 0.25em;
+  transition: margin-left 0.2s ease;
+}
+
+.cta:hover::after,
+.product-card:hover .cta::after {
+  margin-left: 0.5em;
 }

@@ -22,12 +22,13 @@
   --padding-x: 1rem;
   --padding-y: 3rem;
 
-  --header-height: 80px;
+  --header-height: 100px;
 }
 
 body {
   background: var(--cream);
   color: var(--black-00);
+  scroll-behavior: smooth;
 }
 
 img {
@@ -38,4 +39,9 @@ img {
 a {
   text-decoration: none;
   color: var(--black-00);
+  padding: 0.25em 0;
+}
+
+a:not(.logo, .product-card):hover {
+  border-bottom: 0.25em solid var(--blue-05);
 }
