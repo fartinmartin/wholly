@@ -1,8 +1,8 @@
 .cta {
   display: inline-block;
-  padding: 0.25em 0;
+  padding-bottom: 0.25em;
   font-weight: 500;
-  border-bottom: 0.25em solid var(--blue-05);
+  border-bottom: 0.25em solid var(--black-05);
 }
 
 .cta::after {

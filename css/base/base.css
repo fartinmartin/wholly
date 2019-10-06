@@ -44,7 +44,7 @@ a {
 }
 
 a:not(.logo):not(.product-card):hover {
-  border-bottom: 0.25em solid var(--blue-05);
+  border-bottom: 0.25em solid var(--black-05);
   color: var(--black-10);
 }
 

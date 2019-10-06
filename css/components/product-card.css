@@ -15,17 +15,26 @@
   height: 200px;
 }
 
-.product-card h4 {
+.product-card:nth-child(1) .cta {
+  border-color: var(--blue-05);
+}
+.product-card:nth-child(2) .cta {
+  border-color: var(--green-05);
+}
+.product-card:nth-child(3) .cta {
+  border-color: var(--red-05);
+}
+/* .product-card h4 {
   font-family: nimbus-sans, sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-}
+} */
 
 .product-card p {
   color: var(--black-10);
 }
 
-.product-card .cta {
+.product-card > *:last-child {
   margin-top: auto;
 }
 
