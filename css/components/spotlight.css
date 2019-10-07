@@ -1,12 +1,12 @@
-span.cta {
+.spotlight .cta {
   cursor: auto;
 }
 
-span.cta::after {
+.spotlight .cta::after {
   display: none;
 }
 
-span.cta span {
+.spotlight .cta span {
   color: var(--black-10);
 }
 
