@@ -28,14 +28,14 @@
   margin-top: calc(var(--padding-y) * -1);
   margin-left: var(--padding-x);
   border-top: 1px dotted var(--black-00);
-  border-bottom: 1px dotted var(--black-00);
+  /* border-bottom: 1px dotted var(--black-00); */
 }
 
 .spotlight-cta {
   background: var(--cream);
   color: var(--black-00);
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .spotlight-cta p {

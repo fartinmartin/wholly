@@ -24,9 +24,14 @@ footer a:hover {
   padding-bottom: var(--padding-y);
 }
 
-.email input, .email button {
+.email p {
+  font-weight: 500;
+}
+
+.email input,
+.email button {
   border: 1px solid var(--black-10);
-  padding: .75em;
+  padding: 0.75em;
   line-height: 1;
   font-size: 1rem;
   background: var(--cream);
@@ -53,12 +58,14 @@ footer h5 {
   text-transform: uppercase;
   font-size: 0.875rem;
   letter-spacing: 0.0125em;
+  opacity: 0.5;
 }
 
 .legal {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  opacity: 0.5;
 }
 
 .bcorp {
@@ -85,7 +92,7 @@ footer h5 {
 
 .footer-footer .logo {
   max-width: 50px;
-  margin: -.5rem;
+  margin: -0.5rem;
 }
 
 .footer-footer a {
