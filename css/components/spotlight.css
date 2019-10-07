@@ -16,9 +16,12 @@
 
 .spotlight .container {
   position: relative;
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
 }
 
 .spotlight .container::before {
+  z-index: -1;
   content: "";
   position: absolute;
   top: 0;
@@ -41,4 +44,9 @@
 .spotlight-cta p {
   margin: 0;
   max-width: initial;
+}
+
+.spotlight-cta .hashtag {
+  font-weight: 500;
+  color: var(--black-00);
 }
