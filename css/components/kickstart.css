@@ -1,0 +1,13 @@
+.kickstart-main {
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
+.kickstart-related {
+  grid-column: 1/-1;
+}
+
+.kickstart .product-card > *:last-child {
+  margin-top: 1rem;
+}
+

@@ -1,0 +1,37 @@
+span.cta {
+  cursor: auto;
+}
+
+span.cta::after {
+  display: none;
+}
+
+span.cta span {
+  color: var(--black-10);
+}
+
+.spotlight .grid {
+  padding-top: var(--padding-y);
+}
+
+.spotlight {
+  position: relative;
+}
+
+.spotlight .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - var(--padding-x) * 8);
+
+  margin-left: calc(var(--padding-x) * 4);
+
+  border-top: 1px dotted var(--black-00);
+}
+
+.spotlight-cta {
+  background: var(--cream);
+  color: var(--black-00);
+  padding: 1rem;
+}
