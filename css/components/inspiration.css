@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
 
-  font-family: orpheuspro, serif;
+  /* font-family: orpheuspro, serif; */
+  font-family: p22-mackinac-pro, serif;
   font-weight: 700;
   font-style: italic;
   font-size: 3rem;
