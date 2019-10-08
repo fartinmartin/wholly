@@ -20,8 +20,11 @@ footer a:hover {
 
 .email,
 .menus {
-  /* padding-top: var(--padding-y); */
   padding-bottom: var(--padding-y);
+}
+
+.menus > div {
+  width: max-content;
 }
 
 .email p {
