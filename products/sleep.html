@@ -339,11 +339,7 @@
       }
 
       randomizeButton.addEventListener("click", event => {
-        // TODO: force new random number (so that it's never the same as it just was)!
-        // maybe it goes like:
-        // 1. flavors.find checked input
-        // 2. last = figure out was number in array that is
-        // 3. flavor = {randomnumber(...) if random number != last else new random number}
+        // TODO: force a _new_ random selection
         const flavor = getRandom(0, flavors.length - 1);
 
         flavors.forEach(flavor => flavor.setAttribute("checked", false));
@@ -414,7 +410,7 @@
         // either hide .helper-text or replace innerHTML text:
         // helperText.style.opacity = 0;
         helperText.innerHTML =
-          "Your custonmized <strong>Sleep Pack</strong> is below:";
+          "Your customized <strong>Sleep Pack</strong> is below:";
       }
 
       const flavorsData = {
