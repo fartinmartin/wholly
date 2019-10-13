@@ -165,7 +165,11 @@
               });
             </script>
             <script>
-              const targets = document.querySelectorAll(".lottie");
+              const lotties = document.querySelectorAll(".lottie");
+              let targets = [];
+              lotties.forEach(lottie => {
+                targets.push(lottie.parentNode);
+              });
 
               const options = {
                 root: null,
@@ -177,7 +181,8 @@
                 const io = new IntersectionObserver((entries, observer) => {
                   entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                      const animation = entry.target.id;
+                      const animation = entry.target.querySelector(".lottie")
+                        .id;
                       window[animation].play();
                       observer.disconnect();
                     }
