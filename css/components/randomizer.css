@@ -5,7 +5,7 @@
 
 .randomizer p {
   margin: 0;
-  /* max-width: initial; */
+  max-width: initial;
   color: var(--black-00);
 }
 
@@ -14,13 +14,16 @@
 
 @media (min-width: 768px) {
   .randomizer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .randomizer p {
+    grid-column: span 2;
   }
   .randomizer button {
-    margin-top: 0;
-    width: calc(100% / 3);
+    margin-top: 0 !important;
+    align-self: center;
   }
 }
 

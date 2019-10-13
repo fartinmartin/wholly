@@ -27,6 +27,10 @@
   color: var(--blue-00);
 }
 
+.flavor-inputs label span {
+  font-size: 0.75em;
+}
+
 .flavor-inputs input,
 .flavor-inputs label {
   cursor: pointer !important;
@@ -41,6 +45,7 @@
 .flavor-inputs input:checked + label {
   background: var(--blue-00);
   color: var(--cream);
+  font-weight: 700;
 }
 
 .flavor-inputs input:checked + label:hover {

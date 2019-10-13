@@ -11,9 +11,14 @@
 }
 
 .results .grid {
+  grid-template-columns: repeat(3, 1fr);
   background: var(--cream);
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.results .grid > * {
+  grid-column: span 1;
 }
 
 .helper-text {
@@ -37,4 +42,21 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#your-flavor {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.results h6 {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: var(--black-10);
+}
+
+.results h6 span {
+  color: var(--black-00);
 }
