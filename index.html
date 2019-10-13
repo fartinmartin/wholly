@@ -154,10 +154,41 @@
             <a class="cta" href="#">Help us spark industry-wide change</a>
           </div>
           <div class="image">
-            <img
-              src="https://source.unsplash.com/random?justice"
-              alt="Product image"
-            />
+            <div class="lottie" id="justice"></div>
+            <script>
+              var justice = bodymovin.loadAnimation({
+                container: document.getElementById("justice"),
+                renderer: "svg",
+                loop: false,
+                autoplay: false,
+                path: "./js/justice.json"
+              });
+            </script>
+            <script>
+              const targets = document.querySelectorAll(".lottie");
+
+              const options = {
+                root: null,
+                rootMargin: "-250px 0px",
+                threshold: [1]
+              };
+
+              const playOnScroll = target => {
+                const io = new IntersectionObserver((entries, observer) => {
+                  entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                      const animation = entry.target.id;
+                      window[animation].play();
+                      observer.disconnect();
+                    }
+                  });
+                }, options);
+
+                io.observe(target);
+              };
+
+              targets.forEach(playOnScroll);
+            </script>
           </div>
         </div>
       </section>
@@ -383,14 +414,14 @@
       window.addEventListener("scroll", function() {
         if (window.scrollY >= originalHeaderHeight) {
           header.classList.add("is-scrolled");
-          animLogo.setDirection(1);
+          // animLogo.setDirection(1);
           // animLogo.setSpeed(1.25);
-          animLogo.play();
+          // animLogo.play();
         } else {
           header.classList.remove("is-scrolled");
-          animLogo.setDirection(-1);
+          // animLogo.setDirection(-1);
           // animLogo.setSpeed(1.25);
-          animLogo.play();
+          // animLogo.play();
         }
       });
     </script>
