@@ -4,18 +4,24 @@
   margin-top: var(--padding-y);
 }
 
-.results .text {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
 .results .grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   background: var(--cream);
   width: 100%;
   padding: 1rem;
 }
+
+/* blue color scheme */
+/* .results .grid {
+  background: var(--blue-20);
+}
+.results .grid h6 {
+  color: var(--blue-05) !important;
+}
+.results .grid button {
+  background: var(--blue-05) !important;
+} */
+/*  */
 
 .results .grid > * {
   grid-column: span 1;
@@ -59,4 +65,43 @@
 
 .results h6 span {
   color: var(--black-00);
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 0.25em;
+}
+
+.price span {
+  vertical-align: top;
+  font-size: 0.75em;
+}
+
+.cashed-cta {
+  margin-top: 2rem;
+}
+
+.results button svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-top: -2px;
+  margin-left: 0.125em;
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+  .results .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
 }

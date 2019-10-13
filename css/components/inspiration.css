@@ -11,7 +11,7 @@
   line-height: 1.2;
 }
 
-.inspiration > .container::before {
+/* .inspiration > .container::before {
   z-index: -1;
   content: "";
   position: absolute;
@@ -25,7 +25,7 @@
 
   border-top: 1px dotted var(--black-00);
   border-bottom: 1px dotted var(--black-00);
-}
+} */
 
 .inspiration .quote {
   margin-top: -0.25em;
@@ -38,4 +38,22 @@
 
 .inspiration strong {
   text-decoration: underline;
+}
+
+.inspiration.anna {
+  background: var(--green-10);
+}
+
+.inspiration.anna .cite {
+  color: var(--green-00);
+  opacity: 0.5;
+}
+
+.inspiration.maya {
+  background: var(--red-10);
+}
+
+.inspiration.maya .cite {
+  color: var(--red-00);
+  opacity: 0.5;
 }

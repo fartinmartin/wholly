@@ -6,6 +6,10 @@
   padding-top: calc(var(--padding-y) * 2);
 }
 
+.product-page .related .product-card > :last-child {
+  margin-top: 1rem;
+}
+
 .product-page .product-list {
   justify-content: flex-start;
   padding-top: calc(var(--padding-y) / 2);

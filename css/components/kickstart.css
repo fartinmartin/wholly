@@ -15,7 +15,9 @@
   line-height: 1;
 }
 
-.kickstart .sub-h3 {
+.sub-h3 {
   color: var(--black-10);
   font-size: 0.75em;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
