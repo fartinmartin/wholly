@@ -12,7 +12,7 @@
 }
 
 /* blue color scheme */
-/* .results .grid {
+.results .grid {
   background: var(--blue-20);
 }
 .results .grid h6 {
@@ -20,7 +20,7 @@
 }
 .results .grid button {
   background: var(--blue-05) !important;
-} */
+}
 /*  */
 
 .results .grid > * {
