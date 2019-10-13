@@ -1,0 +1,25 @@
+.flavor-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.flavor-inputs h4 {
+  font-family: nimbus-sans, sans-serif;
+  padding-bottom: 0.25em;
+  font-weight: 500;
+  border-bottom: 0.25em solid var(--blue-05);
+  margin-bottom: 1rem;
+}
+
+/* [type="radio"] */
+
+.flavor-inputs input,
+.flavor-inputs label {
+  cursor: pointer !important;
+}
+
+.flavor-inputs input[type="radio"] {
+  /* position: fixed;
+  opacity: 0; */
+}
