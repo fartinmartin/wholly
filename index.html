@@ -110,16 +110,17 @@
             <h3>Using Cannabis to Overcome Climate Challenges</h3>
             <p>
               Modern agricultural practices have interrupted the earth’s natural
-              ability to recycle carbon, resulting in too much C02 making its
-              way into our atmosphere and wreaking havoc on our global climate.
+              ability to recycle carbon, resulting in too much CO<sub>2</sub>
+              making its way into our atmosphere and wreaking havoc on our
+              global climate.
             </p>
             <p>
               Cannabis is exceptional at pulling carbon out of the air and
               redirecting it into soil, where it can be used by plants as
               healthy nutrition. By alternating common crops with cannabis each
-              growing season, farmers can maintain healthier soil that grows
-              more nutrient rich food and reduces the need for harmful
-              pesticides.
+              growing season, farmers can
+              <strong>maintain healthier soil</strong> that grows more nutrient
+              rich food and reduces the need for harmful pesticides.
             </p>
             <a class="cta" href="#">Learn more about Wholly’s co-op of farms</a>
           </div>
@@ -144,9 +145,12 @@
               over-policed communities.
             </p>
             <p>
-              This is why Wholly has partnered with the Prison Policy Initiative
-              to build re-entry infrastructure into our hiring practices,
-              focusing on hiring previously incarcerated individuals with
+              This is why Wholly has partnered with the
+              <strong>Prison Policy Initiative</strong>
+              to
+              <strong
+                >build re-entry infrastructure into our hiring practices</strong
+              >, focusing on hiring previously incarcerated individuals with
               non-violent drug related offenses on their records. This effort is
               a small but significant step in working toward a more equitable
               future for the marijuana industry.
@@ -163,36 +167,6 @@
                 autoplay: false,
                 path: "./js/justice.json"
               });
-            </script>
-            <script>
-              const lotties = document.querySelectorAll(".lottie");
-              let targets = [];
-              lotties.forEach(lottie => {
-                targets.push(lottie.parentNode);
-              });
-
-              const options = {
-                root: null,
-                rootMargin: "-250px 0px",
-                threshold: [1]
-              };
-
-              const playOnScroll = target => {
-                const io = new IntersectionObserver((entries, observer) => {
-                  entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                      const animation = entry.target.querySelector(".lottie")
-                        .id;
-                      window[animation].play();
-                      observer.disconnect();
-                    }
-                  });
-                }, options);
-
-                io.observe(target);
-              };
-
-              targets.forEach(playOnScroll);
             </script>
           </div>
         </div>
@@ -221,7 +195,11 @@
             />
           </div>
           <div class="text">
-            <h3>The Selfcare Kickstart — the best place to start.</h3>
+            <h3>
+              The Selfcare Kickstart<br /><span class="sub-h3"
+                >The best place to start.</span
+              >
+            </h3>
             <p>
               A sampling of all three of our products to help you make the most
               of your everyday.
@@ -377,19 +355,8 @@
     <div class="footer-footer">
       <div class="container">
         <a href="#"
-          ><div class="logo">
-            <svg
-              enable-background="new 0 0 213.5 213.5"
-              viewBox="0 0 213.5 213.5"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="m0 0h213.5v213.5h-213.5z" fill="#311" />
-              <path
-                d="m153.3 63h-123.9v2l12.1 12.2 31 68.1c3 6.6 1.6 14.3-3.5 19.4v2h13.2c14.2 0 23.6-14.6 17.7-27.5l-22.9-50.6c-3.6-8-1.9-17.4 4.2-23.6l12.1 12.2 31 68.1c3 6.6 1.6 14.3-3.5 19.4v2h13.2c14.2 0 23.6-14.6 17.7-27.5l-23-50.6c-3.6-8-1.9-17.4 4.2-23.6.1.1.2.2.3.3.3.3.6.6.9.8.2.2.3.3.5.4.2.2.4.4.7.6.2.2.4.3.6.4.2.2.4.3.7.5.2.1.4.3.6.4s.4.3.7.4c.2.1.4.3.6.4s.4.3.7.4c.2.1.4.2.6.4.2.1.5.2.7.4.2.1.4.2.7.3.2.1.5.2.7.3s.4.2.7.3.5.2.8.3c.2.1.4.1.5.2 5.6 2 9.5 7.1 9.5 13.1v.6l20.2-20.5v-2z"
-                fill="#fff4ef"
-              />
-            </svg></div
-        ></a>
+          ><h2>w<span class="hom">holly</span></h2></a
+        >
         <div>
           <ul>
             <li><a href="#">Instagram</a></li>
@@ -400,6 +367,35 @@
       </div>
     </div>
 
+    <script>
+      const lotties = document.querySelectorAll(".lottie");
+      let targets = [];
+      lotties.forEach(lottie => {
+        targets.push(lottie.parentNode);
+      });
+
+      const options = {
+        root: null,
+        rootMargin: "-50% 0px",
+        threshold: [0]
+      };
+
+      const playOnScroll = target => {
+        const io = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const animation = entry.target.querySelector(".lottie").id;
+              window[animation].play();
+              observer.disconnect();
+            }
+          });
+        }, options);
+
+        io.observe(target);
+      };
+
+      targets.forEach(playOnScroll);
+    </script>
     <script>
       var scroll = new SmoothScroll('a[href*="#"]', {
         speed: 800,

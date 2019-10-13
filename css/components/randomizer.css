@@ -1,0 +1,31 @@
+.randomizer {
+  background: var(--cream);
+  padding: 1rem;
+}
+
+.randomizer p {
+  margin: 0;
+  /* max-width: initial; */
+  color: var(--black-00);
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+  .randomizer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .randomizer button {
+    margin-top: 0;
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+}

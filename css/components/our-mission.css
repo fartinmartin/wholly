@@ -5,3 +5,8 @@
 .kickstart .image {
   order: 10;
 }
+
+.equity strong,
+.climate strong {
+  color: var(--black-05);
+}

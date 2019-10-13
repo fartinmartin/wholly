@@ -1,11 +1,12 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 2rem 0;
 }
 
 .text {
   grid-column: span 3;
+  order: 10;
 }
 
 .image {
@@ -23,4 +24,23 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+  .text {
+    order: initial;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
 }

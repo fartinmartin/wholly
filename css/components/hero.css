@@ -3,6 +3,9 @@
   padding-bottom: var(--padding-y);
   /* padding: var(--padding-y) 0; */
 
+  background: var(--blue-10);
+  /* color: var(--cream-10); */
+
   min-height: 35vh;
   display: flex;
   flex-direction: column;
@@ -12,7 +15,11 @@
 .hero > .container {
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
+  /* align-items: center; */
+}
+
+.hero p {
+  color: var(--black-00);
 }
 
 .elevator-pitch {
@@ -31,13 +38,13 @@
 .hero-product {
   width: 40%;
   text-align: center;
+  margin: 0 auto;
 }
 
 .hero-product img {
   max-height: 35vh;
   min-height: 35vh;
   width: auto;
-  margin-right: -4rem;
 }
 
 @media (min-width: 640px) {
@@ -57,7 +64,6 @@
     width: 60%;
   }
   .elevator-pitch h2 {
-    /* font-size: 3rem; */
     font-size: 2.5rem;
   }
 }

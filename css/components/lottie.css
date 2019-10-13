@@ -1,0 +1,24 @@
+.image .lottie {
+  margin-top: -100%;
+  transform: scale(1.5);
+}
+
+.scale-fill path {
+  fill: var(--cream-10);
+}
+
+.scale-stroke path {
+  fill: var(--blue-05);
+}
+
+/* body:after {
+  content: "";
+  background: var(--black-00);
+  opacity: 0.2;
+  border: 1px solid red;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+} */

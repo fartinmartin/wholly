@@ -5,7 +5,7 @@ header {
   width: 100%;
   z-index: 1000;
 
-  /* background: var(--cream-10); */
+  background: var(--cream-10);
   height: var(--header-height);
   transition: all 0.2s ease;
 }

@@ -1,0 +1,41 @@
+.results {
+  position: relative;
+  padding-top: var(--padding-y);
+  margin-top: var(--padding-y);
+  min-height: 500px;
+}
+
+.results .text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.results .grid {
+  background: var(--cream);
+  width: 100%;
+  padding: 2rem;
+}
+
+.helper-text {
+  padding: 1rem;
+  background: var(--cream);
+  color: var(--black);
+  width: 100%;
+}
+
+.helper-text,
+.results .grid {
+  transition: opacity 0.2s ease;
+}
+
+.results .grid {
+  opacity: 0;
+}
+
+.helper-text,
+.results .grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

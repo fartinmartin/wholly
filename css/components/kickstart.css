@@ -11,3 +11,11 @@
   margin-top: 1rem;
 }
 
+.kickstart h3 {
+  line-height: 1;
+}
+
+.kickstart .sub-h3 {
+  color: var(--black-10);
+  font-size: 0.75em;
+}

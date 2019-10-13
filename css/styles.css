@@ -16,4 +16,9 @@
 @import url("./components/our-mission.css");
 @import url("./components/kickstart.css");
 @import url("./components/spotlight.css");
-@import url("./components/product-customizer.css");
+@import url("./components/lottie.css");
+
+@import url("./components/product-page.css");
+@import url("./components/flavor-inputs.css");
+@import url("./components/randomizer.css");
+@import url("./components/results.css");
