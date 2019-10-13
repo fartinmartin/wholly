@@ -317,14 +317,14 @@
       window.addEventListener("scroll", function() {
         if (window.scrollY >= originalHeaderHeight) {
           header.classList.add("is-scrolled");
-          animLogo.setDirection(1);
+          // animLogo.setDirection(1);
           // animLogo.setSpeed(1.25);
-          animLogo.play();
+          // animLogo.play();
         } else {
           header.classList.remove("is-scrolled");
-          animLogo.setDirection(-1);
+          // animLogo.setDirection(-1);
           // animLogo.setSpeed(1.25);
-          animLogo.play();
+          // animLogo.play();
         }
       });
     </script>
@@ -482,6 +482,15 @@
           name: "LG"
         }
       };
+    </script>
+    <script>
+      const resultPlaceholder = document.querySelector(".results")
+      const resultActual = document.querySelector(".results .grid")
+
+      console.log(resultPlaceholder)
+      console.log(resultActual)
+
+      resultPlaceholder.style.height = `${resultActual.offsetHeight}px`;
     </script>
   </body>
 </html>

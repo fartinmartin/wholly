@@ -3,7 +3,7 @@
 }
 
 .product-page .related {
-  padding-top: var(--padding-y);
+  padding-top: calc(var(--padding-y) * 2);
 }
 
 .product-page .product-list {

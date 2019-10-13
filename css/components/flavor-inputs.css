@@ -19,7 +19,7 @@
   display: block;
   background: var(--blue-10);
   color: var(--black-00);
-  padding: 0.5em 0.75em;
+  padding: 0.75rem 1rem;
 }
 
 .flavor-inputs label:hover {

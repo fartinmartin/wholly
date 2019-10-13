@@ -2,7 +2,6 @@
   position: relative;
   padding-top: var(--padding-y);
   margin-top: var(--padding-y);
-  min-height: 500px;
 }
 
 .results .text {
