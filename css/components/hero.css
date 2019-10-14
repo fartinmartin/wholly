@@ -47,10 +47,13 @@
 }
 
 .hero-product img {
+  margin-top: -3rem;
+}
+/* .hero-product img {
   max-height: 35vh;
   min-height: 35vh;
   width: auto;
-}
+} */
 
 @media (min-width: 640px) {
 }

@@ -54,6 +54,14 @@
   .product-page .product-card:last-child {
     margin-left: 1rem;
   }
+  /*
+  .product-page .hero .image {
+    grid-column: span 3;
+    max-height: 200px;
+  }
+  .product-page .hero .text {
+    grid-column: span 2;
+  } */
 }
 
 @media (min-width: 1280px) {
