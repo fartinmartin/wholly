@@ -31,8 +31,13 @@
 }
 
 .elevator-pitch h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 1.2;
+  /* font-weight: 400; */
+}
+
+.elevator-pitch h2 strong {
+  font-weight: inherit;
 }
 
 .hero-product {
@@ -64,7 +69,7 @@
     width: 60%;
   }
   .elevator-pitch h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
