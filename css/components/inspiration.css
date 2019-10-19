@@ -11,6 +11,20 @@
   line-height: 1.2;
 }
 
+.inspiration {
+  position: relative;
+}
+
+.inspiration::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1rem;
+  width: 100%;
+  background: var(--red-00);
+  z-index: 1;
+}
+
 /* .inspiration > .container::before {
   z-index: -1;
   content: "";
@@ -32,7 +46,7 @@
 }
 
 .inspiration .cite {
-  color: var(--black-10);
+  color: var(--red-00);
   font-size: 0.75em;
 }
 
@@ -40,8 +54,15 @@
   text-decoration: underline;
 }
 
+.inspiration {
+  background-image: url("../../img/hemp-texture.jpg");
+  background-size: cover;
+  background-color: var(--cream-10);
+  background-blend-mode: color-burn;
+}
+/*
 .inspiration.anna {
-  background: var(--green-10);
+  background-color: var(--cream-10);
 }
 
 .inspiration.anna .cite {
@@ -50,10 +71,10 @@
 }
 
 .inspiration.maya {
-  background: var(--red-10);
+  background-color: var(--cream-10);
 }
 
 .inspiration.maya .cite {
   color: var(--red-00);
   opacity: 0.5;
-}
+} */

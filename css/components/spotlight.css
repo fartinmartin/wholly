@@ -50,3 +50,12 @@
   font-weight: 500;
   color: var(--black-00);
 }
+
+.spotlight .image img {
+  object-position: top;
+  transform: scale(1.2);
+}
+
+.spotlight .text .cta {
+  margin-top: 0;
+}

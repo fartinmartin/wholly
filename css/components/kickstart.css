@@ -1,6 +1,6 @@
 .kickstart-main {
   padding-top: var(--padding-y);
-  padding-bottom: var(--padding-y);
+  /* padding-bottom: var(--padding-y); */
 }
 
 .kickstart-related {
@@ -13,6 +13,10 @@
 
 .kickstart h3 {
   line-height: 1;
+}
+
+.kickstart .image img {
+  top: -18%;
 }
 
 .sub-h3 {

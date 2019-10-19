@@ -1,21 +1,43 @@
 .hero {
   padding-top: calc(var(--header-height) * 1.5);
   padding-bottom: var(--padding-y);
-  /* padding: var(--padding-y) 0; */
 
-  background: var(--blue-10);
-  /* color: var(--cream-10); */
+  background-image: url("../../img/hemp-texture.jpg");
+  background-color: var(--cream-10);
+  background-size: cover;
+  background-blend-mode: color-burn;
 
   min-height: 35vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
 }
 
-.hero > .container {
-  display: flex;
-  flex-direction: column-reverse;
-  /* align-items: center; */
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 23%;
+  width: 100%;
+  background: var(--red-00);
+  z-index: 1;
+}
+
+.hero .cta {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.hero .cta:hover {
+  color: var(--white) !important;
+  border-color: var(--white) !important;
+}
+
+.hero .container {
+  z-index: 2;
+  position: relative;
+}
+
+.hero .image {
+  align-self: center;
 }
 
 .hero p {
@@ -33,27 +55,11 @@
 .elevator-pitch h2 {
   font-size: 1.75rem;
   line-height: 1.2;
-  /* font-weight: 400; */
 }
 
 .elevator-pitch h2 strong {
   font-weight: inherit;
 }
-
-.hero-product {
-  width: 40%;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.hero-product img {
-  margin-top: -3rem;
-}
-/* .hero-product img {
-  max-height: 35vh;
-  min-height: 35vh;
-  width: auto;
-} */
 
 @media (min-width: 640px) {
 }
@@ -62,15 +68,10 @@
 }
 
 @media (min-width: 1024px) {
-  .hero > .container {
-    flex-direction: row;
-  }
   .elevator-pitch br {
     margin-bottom: 0;
   }
-  .elevator-pitch {
-    width: 60%;
-  }
+
   .elevator-pitch h2 {
     font-size: 2rem;
   }
