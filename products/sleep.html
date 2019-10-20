@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/atr2pqi.css" />
 
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie_svg.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   </head>
@@ -34,10 +53,7 @@
       <div class="container">
         <div class="grid">
           <div class="image">
-            <img
-              src="../img/products/sleep-open.png"
-              alt="Product image"
-            />
+            <img src="../img/products/sleep-open.png" alt="Product image" />
           </div>
           <div class="text">
             <h1><strong>Sleep </strong>better</h1>
@@ -108,12 +124,16 @@
 
               <div>
                 <input type="radio" id="medium-d" name="dose" value="Medium" />
-                <label for="medium-d">Medium <span>x mg THC, x mg CBD</span></label>
+                <label for="medium-d"
+                  >Medium <span>x mg THC, x mg CBD</span></label
+                >
               </div>
 
               <div>
                 <input type="radio" id="strong" name="dose" value="Strong" />
-                <label for="strong">Strong <span>x mg THC, x mg CBD</span></label>
+                <label for="strong"
+                  >Strong <span>x mg THC, x mg CBD</span></label
+                >
               </div>
             </div>
 
@@ -139,8 +159,9 @@
 
         <div class="randomizer">
           <p>
-            Not sure where to start? Choose our <strong>Beginner Randomizer</strong>, and you’ll
-            be recommended a random flavor in our <strong>Light dose</strong> (xmg THC, xmg CBD)
+            Not sure where to start? Choose our
+            <strong>Beginner Randomizer</strong>, and you’ll be recommended a
+            random flavor in our <strong>Light dose</strong> (xmg THC, xmg CBD)
             and <strong>Small size</strong>.
           </p>
           <button id="randomize">Randomize</button>
@@ -148,50 +169,53 @@
 
         <div class="results">
           <div class="helper-text">
-            Once you begin to make selections above your customized <strong>Sleep Pack</strong>
+            Once you begin to make selections above your customized
+            <strong>Sleep Pack</strong>
             will appear here.
           </div>
           <div class="grid">
             <div class="image">
-              <img
-                src="../img/products/sleep.png"
-                alt="Product image"
-              />
+              <img src="../img/products/sleep.png" alt="Product image" />
             </div>
+            <div>
               <div>
+                <h6 style="margin-top: 0;">Flavor</h6>
+                <span id="your-flavor"></span>
+              </div>
+              <div class="results-ingredients">
+                <h6>Ingredients</h6>
+                <span id="your-ingredients"></span>
+              </div>
+              <div class="results-dose">
+                <h6>
+                  Dose
+                  <span id="your-dose"></span>
+                </h6>
                 <div>
-                  <h6 style="margin-top: 0;">Flavor</h6>
-                  <span id="your-flavor"></span>
-                </div>
-                <div class="results-ingredients">
-                  <h6>Ingredients</h6>
-                  <span id="your-ingredients"></span>
-                </div>
-                <div class="results-dose">
-                  <h6>
-                    Dose
-                    <span id="your-dose"></span>
-                  </h6>
-                  <div>
-                    <div><span id="your-thc"></span> mg THC per capsule</div>
-                    <div><span id="your-cbd"></span> mg CBD per capsule</div>
-                  </div>
-                </div>
-                <div class="results-size">
-                  <h6>Size <span
-                    id="your-size"
-                  ></h6>
-                  <span id="your-count"></span> capsules
+                  <div><span id="your-thc"></span> mg THC per capsule</div>
+                  <div><span id="your-cbd"></span> mg CBD per capsule</div>
                 </div>
               </div>
-              <div>
-                <h6 style="margin-top: 0;">Total</h6>
-                <div class="price">$9.<span>99</span></div>
-                <div class="cashed-cta">
-                  <button>Add to cart</button>
-                  <button>Save recipe <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 .4C4.698.4.4 4.698.4 10a9.6 9.6 0 1019.2-.001C19.6 4.698 15.301.4 10 .4zm-.151 15.199h-.051c-.782-.023-1.334-.6-1.311-1.371.022-.758.587-1.309 1.343-1.309l.046.002c.804.023 1.35.594 1.327 1.387-.023.76-.578 1.291-1.354 1.291zm3.291-6.531c-.184.26-.588.586-1.098.983l-.562.387c-.308.24-.494.467-.563.688-.056.174-.082.221-.087.576v.09H8.685l.006-.182c.027-.744.045-1.184.354-1.547.485-.568 1.555-1.258 1.6-1.287a1.65 1.65 0 00.379-.387c.225-.311.324-.555.324-.793 0-.334-.098-.643-.293-.916-.188-.266-.545-.398-1.061-.398-.512 0-.863.162-1.072.496-.216.341-.325.7-.325 1.067v.092H6.386l.004-.096c.057-1.353.541-2.328 1.435-2.897.563-.361 1.264-.544 2.081-.544 1.068 0 1.972.26 2.682.772.721.519 1.086 1.297 1.086 2.311-.001.567-.18 1.1-.534 1.585z"/></svg></button>
-                </div>
+              <div class="results-size">
+                <h6>Size <span id="your-size"></span></h6>
+                <span id="your-count"></span> capsules
               </div>
+            </div>
+            <div>
+              <h6 style="margin-top: 0;">Total</h6>
+              <div class="price">$9.<span>99</span></div>
+              <div class="cashed-cta">
+                <button>Add to cart</button>
+                <button>
+                  Save recipe
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                      d="M10 .4C4.698.4.4 4.698.4 10a9.6 9.6 0 1019.2-.001C19.6 4.698 15.301.4 10 .4zm-.151 15.199h-.051c-.782-.023-1.334-.6-1.311-1.371.022-.758.587-1.309 1.343-1.309l.046.002c.804.023 1.35.594 1.327 1.387-.023.76-.578 1.291-1.354 1.291zm3.291-6.531c-.184.26-.588.586-1.098.983l-.562.387c-.308.24-.494.467-.563.688-.056.174-.082.221-.087.576v.09H8.685l.006-.182c.027-.744.045-1.184.354-1.547.485-.568 1.555-1.258 1.6-1.287a1.65 1.65 0 00.379-.387c.225-.311.324-.555.324-.793 0-.334-.098-.643-.293-.916-.188-.266-.545-.398-1.061-.398-.512 0-.863.162-1.072.496-.216.341-.325.7-.325 1.067v.092H6.386l.004-.096c.057-1.353.541-2.328 1.435-2.897.563-.361 1.264-.544 2.081-.544 1.068 0 1.972.26 2.682.772.721.519 1.086 1.297 1.086 2.311-.001.567-.18 1.1-.534 1.585z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -489,11 +513,11 @@
       };
     </script>
     <script>
-      const resultPlaceholder = document.querySelector(".results")
-      const resultActual = document.querySelector(".results .grid")
+      const resultPlaceholder = document.querySelector(".results");
+      const resultActual = document.querySelector(".results .grid");
 
-      console.log(resultPlaceholder)
-      console.log(resultActual)
+      console.log(resultPlaceholder);
+      console.log(resultActual);
 
       resultPlaceholder.style.height = `${resultActual.offsetHeight}px`;
     </script>
