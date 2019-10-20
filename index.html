@@ -161,11 +161,16 @@
             <a class="cta" href="#">Learn more about Wholly’s co-op of farms</a>
           </div>
           <div class="image">
-            <img
-              src="./img/temp-agriculture.svg"
-              alt="Product image"
-              style="transform: scale(1.5);"
-            />
+            <div class="lottie" id="agriculture"></div>
+            <script>
+              var agriculture = bodymovin.loadAnimation({
+                container: document.getElementById("agriculture"),
+                renderer: "svg",
+                loop: true,
+                autoplay: false,
+                path: "./js/agriculture.json"
+              });
+            </script>
           </div>
         </div>
       </section>
