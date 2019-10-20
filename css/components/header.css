@@ -5,8 +5,8 @@ header {
   width: 100%;
   z-index: 1000;
 
-  background: var(--cream-10);
-  height: var(--header-height);
+  /* background: var(--cream-10); */
+  height: calc(var(--header-height) / 1.45);
   transition: all 0.2s ease;
 }
 
@@ -21,4 +21,23 @@ header.is-scrolled {
   background: var(--cream-10);
   height: calc(var(--header-height) / 1.75);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px 0 rgba(0, 0, 0, 0.01);
+}
+
+@media (min-width: 375px) {
+  header {
+    height: calc(var(--header-height) / 1.25);
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    height: var(--header-height);
+    background: var(--cream-10);
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
 }

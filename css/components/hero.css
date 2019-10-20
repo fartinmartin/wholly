@@ -1,6 +1,6 @@
 .hero {
-  padding-top: calc(var(--header-height) * 1.5);
-  padding-bottom: var(--padding-y);
+  padding-top: calc(var(--header-height) / 1.75);
+  padding-bottom: calc(var(--padding-y) * 2);
 
   background-image: url("../../img/hemp-texture.jpg");
   background-color: var(--cream-10);
@@ -10,16 +10,6 @@
   min-height: 35vh;
   position: relative;
 }
-
-/* .index .hero::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  height: 1rem;
-  width: 100%;
-  background: var(--red-00);
-  z-index: 1;
-} */
 
 .hero .container {
   z-index: 2;
@@ -34,27 +24,36 @@
   color: var(--black-00);
 }
 
-.elevator-pitch {
-  padding: var(--padding-y) 0;
-}
-
 .elevator-pitch br {
   margin-bottom: 0.5em;
 }
 
 .elevator-pitch h2 {
-  font-size: 1.75rem;
-  line-height: 1.2;
+  font-size: 1.3rem;
+  line-height: 0.875;
 }
 
 .elevator-pitch h2 strong {
   font-weight: inherit;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 375px) {
+  .elevator-pitch h2 {
+    font-size: 1.55rem;
+  }
 }
 
 @media (min-width: 768px) {
+  .hero {
+    padding-top: calc(var(--header-height) * 1.5);
+    padding-bottom: var(--padding-y);
+  }
+  .elevator-pitch {
+    padding: var(--padding-y) 0;
+  }
+  .elevator-pitch h2 {
+    font-size: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -64,6 +63,7 @@
 
   .elevator-pitch h2 {
     font-size: 2rem;
+    line-height: 1.2;
   }
 }
 

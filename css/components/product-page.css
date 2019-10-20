@@ -45,8 +45,12 @@
 }
 
 .product-page .hero {
-  padding-top: calc(var(--header-height) * 1);
+  padding-top: 1rem;
   padding-bottom: 0;
+}
+
+.product-page .grid {
+  gap: 0;
 }
 
 .product-page .hero .text {
@@ -57,6 +61,12 @@
 }
 
 @media (min-width: 768px) {
+  .product-page .grid {
+    gap: 2rem 0;
+  }
+  .product-page .hero {
+    padding-top: calc(var(--header-height) * 1);
+  }
 }
 
 @media (min-width: 1024px) {

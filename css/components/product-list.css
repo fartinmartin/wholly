@@ -1,12 +1,21 @@
 .product-list {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
   padding-top: var(--padding-y);
   padding-bottom: var(--padding-y);
 }
 
+@media (min-width: 414px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 640px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 768px) {
