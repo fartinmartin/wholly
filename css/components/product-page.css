@@ -44,6 +44,15 @@
   background: var(--black-10);
 }
 
+.product-page .hero {
+  padding-top: calc(var(--header-height) * 1);
+  padding-bottom: 0;
+}
+
+.product-page .hero .text {
+  align-self: center;
+}
+
 @media (min-width: 640px) {
 }
 
@@ -54,14 +63,6 @@
   .product-page .product-card:last-child {
     margin-left: 1rem;
   }
-  /*
-  .product-page .hero .image {
-    grid-column: span 3;
-    max-height: 200px;
-  }
-  .product-page .hero .text {
-    grid-column: span 2;
-  } */
 }
 
 @media (min-width: 1280px) {

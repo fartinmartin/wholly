@@ -11,25 +11,15 @@
   position: relative;
 }
 
-.hero::after {
+/* .index .hero::after {
   content: "";
   position: absolute;
   bottom: 0;
-  height: 23%;
+  height: 1rem;
   width: 100%;
   background: var(--red-00);
   z-index: 1;
-}
-
-.hero .cta {
-  color: var(--white);
-  border-color: var(--white);
-}
-
-.hero .cta:hover {
-  color: var(--white) !important;
-  border-color: var(--white) !important;
-}
+} */
 
 .hero .container {
   z-index: 2;
