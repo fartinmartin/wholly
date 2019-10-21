@@ -1,525 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Wholly • The Cannabis Co-Op</title>
-    <link rel="stylesheet" href="https://unpkg.com/sanitize.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/atr2pqi.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="../favicon/site.webmanifest" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Wholly • The Cannabis Co-Op</title>
+  <link rel="stylesheet" href="https://unpkg.com/sanitize.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/atr2pqi.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie_svg.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-  </head>
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
+  <link rel="manifest" href="../favicon/site.webmanifest" />
 
-  <body class="product-page">
-    <header>
-      <div class="container">
-        <a class="logo" href="../#">
-          <h1>
-            wholly
-          </h1>
-        </a>
-        <ul class="nav">
-          <li><a href="../#products">Our products</a></li>
-          <li><a href="../#our-mission">Our mission</a></li>
-          <li><a href="#findus">Find us</a></li>
-        </ul>
-        <button id="hamburger">≡<span>Menu</span></button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie_svg.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body class="product-page">
+  <header>
+    <div class="container">
+      <a class="logo" href="../#">
+        <h1>
+          wholly
+        </h1>
+      </a>
+      <ul class="nav">
+        <li><a href="../#products">Our products</a></li>
+        <li><a href="../#our-mission">Our mission</a></li>
+        <li><a href="#findus">Find us</a></li>
+      </ul>
+      <button id="hamburger">≡<span>Menu</span></button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="container">
+      <div class="grid">
+        <div class="image">
+          <img src="../img/products/sleep-open.png" alt="Product image" />
+        </div>
+        <div class="text">
+          <h1><strong>Sleep </strong>better</h1>
+          <p>
+            Wholly Sleep Infusions are dissolvable gel capsules that can be
+            taken like a pill or dropped into a glass of hot water to create a
+            pre-bed drink much like tea.
+          </p>
+          <p>
+            Our unique blend of CBD, THC, and soothing natural oils are
+            designed to help you let go of stress and enter a relaxed state
+            that will help you fall asleep faster, stay asleep longer, and
+            wake up feeling refreshed and clear-headed.
+          </p>
+        </div>
       </div>
-    </header>
+    </div>
+  </div>
 
-    <div class="hero">
-      <div class="container">
+  <section class="product-customizer">
+    <div class="container">
+      <div class="selections">
+        <h2>Customize your purchase</h2>
+        <div class="flavor-inputs">
+          <div class="flavors">
+            <h4>Choose your flavor</h4>
+            <div>
+              <input type="radio" id="unflavored" name="flavor" value="Unflavored" />
+              <label for="unflavored">Unflavored</label>
+            </div>
+
+            <div>
+              <input type="radio" id="lemon" name="flavor" value="Lemon" />
+              <label for="lemon">Lemon</label>
+            </div>
+
+            <div>
+              <input type="radio" id="honey-chamomile" name="flavor" value="Honey Chamomile" />
+              <label for="honey-chamomile">Honey Chamomile</label>
+            </div>
+            <div>
+              <input type="radio" id="star-anise" name="flavor" value="Star Anise" />
+              <label for="star-anise">Star Anise</label>
+            </div>
+          </div>
+
+          <div class="doses">
+            <h4>Choose your dose</h4>
+            <div>
+              <input type="radio" id="light" name="dose" value="Light" />
+              <label for="light">Light <span>5mg THC, 5mg CBD</span></label>
+            </div>
+
+            <div>
+              <input type="radio" id="medium-d" name="dose" value="Medium" />
+              <label for="medium-d">Medium <span>10mg THC, 10mg CBD</span></label>
+            </div>
+
+            <div>
+              <input type="radio" id="strong" name="dose" value="Strong" />
+              <label for="strong">Strong <span>25mg THC, 25mg CBD</span></label>
+            </div>
+          </div>
+
+          <div class="sizes">
+            <h4>Select a size</h4>
+            <div>
+              <input type="radio" id="small" name="size" value="Small" />
+              <label for="small">SM <span>30 capsules</span></label>
+            </div>
+
+            <div>
+              <input type="radio" id="medium-s" name="size" value="Medium" />
+              <label for="medium-s">MD <span>60 capsules</span></label>
+            </div>
+
+            <div>
+              <input type="radio" id="large" name="size" value="Large" />
+              <label for="large">LG <span>120 capsules</span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="randomizer">
+        <p>
+          Not sure where to start? Choose our
+          <strong>Beginner Randomizer</strong>, and you’ll be recommended a
+          random flavor in our <strong>Light dose</strong> (xmg THC, xmg CBD)
+          and <strong>Small size</strong>.
+        </p>
+        <button id="randomize">Randomize</button>
+      </div>
+
+      <div class="results">
+        <div class="helper-text">
+          Once you begin to make selections above your customized
+          <strong>Sleep Pack</strong>
+          will appear here.
+        </div>
         <div class="grid">
           <div class="image">
-            <img src="../img/products/sleep-open.png" alt="Product image" />
+            <img src="../img/products/sleep.png" alt="Product image" />
           </div>
-          <div class="text">
-            <h1><strong>Sleep </strong>better</h1>
-            <p>
-              Wholly Sleep Infusions are dissolvable gel capsules that can be
-              taken like a pill or dropped into a glass of hot water to create a
-              pre-bed drink much like tea.
-            </p>
-            <p>
-              Our unique blend of CBD, THC, and soothing natural oils are
-              designed to help you let go of stress and enter a relaxed state
-              that will help you fall asleep faster, stay asleep longer, and
-              wake up feeling refreshed and clear-headed.
-            </p>
+          <div>
+            <div>
+              <h6 style="margin-top: 0;">Flavor</h6>
+              <span id="your-flavor"></span>
+            </div>
+            <div class="results-ingredients">
+              <h6>Ingredients</h6>
+              <span id="your-ingredients"></span>
+            </div>
+            <div class="results-dose">
+              <h6>
+                Dose
+                <span id="your-dose"></span>
+              </h6>
+              <div>
+                <div><span id="your-thc"></span> mg THC per capsule</div>
+                <div><span id="your-cbd"></span> mg CBD per capsule</div>
+              </div>
+            </div>
+            <div class="results-size">
+              <h6>Size <span id="your-size"></span></h6>
+              <span id="your-count"></span> capsules
+            </div>
           </div>
+          <div>
+            <h6 style="margin-top: 0;">Total</h6>
+            <div class="price">$9.<span>99</span></div>
+            <div class="cashed-cta">
+              <button>Add to cart</button>
+              <button>
+                Save recipe
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path
+                    d="M10 .4C4.698.4.4 4.698.4 10a9.6 9.6 0 1019.2-.001C19.6 4.698 15.301.4 10 .4zm-.151 15.199h-.051c-.782-.023-1.334-.6-1.311-1.371.022-.758.587-1.309 1.343-1.309l.046.002c.804.023 1.35.594 1.327 1.387-.023.76-.578 1.291-1.354 1.291zm3.291-6.531c-.184.26-.588.586-1.098.983l-.562.387c-.308.24-.494.467-.563.688-.056.174-.082.221-.087.576v.09H8.685l.006-.182c.027-.744.045-1.184.354-1.547.485-.568 1.555-1.258 1.6-1.287a1.65 1.65 0 00.379-.387c.225-.311.324-.555.324-.793 0-.334-.098-.643-.293-.916-.188-.266-.545-.398-1.061-.398-.512 0-.863.162-1.072.496-.216.341-.325.7-.325 1.067v.092H6.386l.004-.096c.057-1.353.541-2.328 1.435-2.897.563-.361 1.264-.544 2.081-.544 1.068 0 1.972.26 2.682.772.721.519 1.086 1.297 1.086 2.311-.001.567-.18 1.1-.534 1.585z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="related">
+        <p><strong>You may also like:</strong></p>
+        <div class="product-list">
+          <a class="product-card" href="./sleep.html">
+            <span class="cta">Sleep</span>
+            <p>
+              A pre-bed infusion designed to help you fall asleep fast.
+            </p>
+          </a>
+          <a class="product-card" href="./sleep.html">
+            <span class="cta">Focus</span>
+            <p>
+              Chewable tablets to help you concentrate.
+            </p>
+          </a>
+          <a class="product-card" href="./sleep.html">
+            <span class="cta">Socialize</span>
+            <p>
+              Sharable bites to loosen you up.
+            </p>
+          </a>
         </div>
       </div>
     </div>
+  </section>
 
-    <section class="product-customizer">
-      <div class="container">
-        <div class="selections">
-          <h2>Customize your purchase</h2>
-          <div class="flavor-inputs">
-            <div class="flavors">
-              <h4>Choose your flavor</h4>
-              <div>
-                <input
-                  type="radio"
-                  id="unflavored"
-                  name="flavor"
-                  value="Unflavored"
-                />
-                <label for="unflavored">Unflavored</label>
-              </div>
-
-              <div>
-                <input type="radio" id="lemon" name="flavor" value="Lemon" />
-                <label for="lemon">Lemon</label>
-              </div>
-
-              <div>
-                <input
-                  type="radio"
-                  id="honey-chamomile"
-                  name="flavor"
-                  value="Honey Chamomile"
-                />
-                <label for="honey-chamomile">Honey Chamomile</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="star-anise"
-                  name="flavor"
-                  value="Star Anise"
-                />
-                <label for="star-anise">Star Anise</label>
-              </div>
-            </div>
-
-            <div class="doses">
-              <h4>Choose your dose</h4>
-              <div>
-                <input type="radio" id="light" name="dose" value="Light" />
-                <label for="light">Light <span>x mg THC, x mg CBD</span></label>
-              </div>
-
-              <div>
-                <input type="radio" id="medium-d" name="dose" value="Medium" />
-                <label for="medium-d"
-                  >Medium <span>x mg THC, x mg CBD</span></label
-                >
-              </div>
-
-              <div>
-                <input type="radio" id="strong" name="dose" value="Strong" />
-                <label for="strong"
-                  >Strong <span>x mg THC, x mg CBD</span></label
-                >
-              </div>
-            </div>
-
-            <div class="sizes">
-              <h4>Select a size</h4>
-              <div>
-                <input type="radio" id="small" name="size" value="Small" />
-                <label for="small">SM <span>x capsules</span></label>
-              </div>
-
-              <div>
-                <input type="radio" id="medium-s" name="size" value="Medium" />
-                <label for="medium-s">MD <span>x capsules</span></label>
-              </div>
-
-              <div>
-                <input type="radio" id="large" name="size" value="Large" />
-                <label for="large">LG <span>x capsules</span></label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="randomizer">
-          <p>
-            Not sure where to start? Choose our
-            <strong>Beginner Randomizer</strong>, and you’ll be recommended a
-            random flavor in our <strong>Light dose</strong> (xmg THC, xmg CBD)
-            and <strong>Small size</strong>.
-          </p>
-          <button id="randomize">Randomize</button>
-        </div>
-
-        <div class="results">
-          <div class="helper-text">
-            Once you begin to make selections above your customized
-            <strong>Sleep Pack</strong>
-            will appear here.
-          </div>
-          <div class="grid">
-            <div class="image">
-              <img src="../img/products/sleep.png" alt="Product image" />
-            </div>
-            <div>
-              <div>
-                <h6 style="margin-top: 0;">Flavor</h6>
-                <span id="your-flavor"></span>
-              </div>
-              <div class="results-ingredients">
-                <h6>Ingredients</h6>
-                <span id="your-ingredients"></span>
-              </div>
-              <div class="results-dose">
-                <h6>
-                  Dose
-                  <span id="your-dose"></span>
-                </h6>
-                <div>
-                  <div><span id="your-thc"></span> mg THC per capsule</div>
-                  <div><span id="your-cbd"></span> mg CBD per capsule</div>
-                </div>
-              </div>
-              <div class="results-size">
-                <h6>Size <span id="your-size"></span></h6>
-                <span id="your-count"></span> capsules
-              </div>
-            </div>
-            <div>
-              <h6 style="margin-top: 0;">Total</h6>
-              <div class="price">$9.<span>99</span></div>
-              <div class="cashed-cta">
-                <button>Add to cart</button>
-                <button>
-                  Save recipe
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path
-                      d="M10 .4C4.698.4.4 4.698.4 10a9.6 9.6 0 1019.2-.001C19.6 4.698 15.301.4 10 .4zm-.151 15.199h-.051c-.782-.023-1.334-.6-1.311-1.371.022-.758.587-1.309 1.343-1.309l.046.002c.804.023 1.35.594 1.327 1.387-.023.76-.578 1.291-1.354 1.291zm3.291-6.531c-.184.26-.588.586-1.098.983l-.562.387c-.308.24-.494.467-.563.688-.056.174-.082.221-.087.576v.09H8.685l.006-.182c.027-.744.045-1.184.354-1.547.485-.568 1.555-1.258 1.6-1.287a1.65 1.65 0 00.379-.387c.225-.311.324-.555.324-.793 0-.334-.098-.643-.293-.916-.188-.266-.545-.398-1.061-.398-.512 0-.863.162-1.072.496-.216.341-.325.7-.325 1.067v.092H6.386l.004-.096c.057-1.353.541-2.328 1.435-2.897.563-.361 1.264-.544 2.081-.544 1.068 0 1.972.26 2.682.772.721.519 1.086 1.297 1.086 2.311-.001.567-.18 1.1-.534 1.585z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="related">
-          <p><strong>You may also like:</strong></p>
-          <div class="product-list">
-            <a class="product-card" href="./sleep.html">
-              <span class="cta">Sleep</span>
-              <p>
-                A pre-bed infusion designed to help you fall asleep fast.
-              </p>
-            </a>
-            <a class="product-card" href="./sleep.html">
-              <span class="cta">Focus</span>
-              <p>
-                Chewable tablets to help you concentrate.
-              </p>
-            </a>
-            <a class="product-card" href="./sleep.html">
-              <span class="cta">Socialize</span>
-              <p>
-                Sharable bites to loosen you up.
-              </p>
-            </a>
-          </div>
-        </div>
+  <footer id="findus">
+    <div class="container">
+      <div class="email">
+        <p>
+          Enter your email to stay in touch <br />
+          & be the first to hear about new products.
+        </p>
+        <form action="submit">
+          <input type="email" placeholder="kim@daily.com" />
+          <button>Sign up</button>
+        </form>
       </div>
-    </section>
-
-    <footer id="findus">
-      <div class="container">
-        <div class="email">
-          <p>
-            Enter your email to stay in touch <br />
-            & be the first to hear about new products.
+      <div class="footer">
+        <div class="menus grid">
+          <div>
+            <h5>Help</h5>
+            <ul>
+              <li><a href="#">1 888 424 3689</a></li>
+              <li><a href="#">help@wholly.com</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Dosage Recommendations</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Shop</h5>
+            <ul>
+              <li><a href="#">Sleep </a></li>
+              <li><a href="#">Focus</a></li>
+              <li><a href="#">Socialize</a></li>
+              <li><a href="#">Selfcare Kickstart</a></li>
+              <li><a href="#">Giftcards</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Sustainability</a></li>
+              <li><a href="#">Prison Policy Partnership</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Become a Wholly Co•op Farmer</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal">
+          <svg class="bcorp" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.828 141.183">
+            <path
+              d="M11.593 4.602a3.534 3.534 0 00-1.83-1.464 3.631 3.631 0 00-1.231-.21c-.783 0-1.449.152-1.996.455-.547.304-.99.71-1.33 1.22a5.315 5.315 0 00-.743 1.741 8.61 8.61 0 00-.233 2.017c0 .665.077 1.312.233 1.94.155.628.403 1.194.743 1.697.34.503.783.905 1.33 1.209.547.303 1.213.455 1.996.455 1.065 0 1.896-.325 2.495-.975.599-.651.965-1.508 1.098-2.572h3.371c-.089.99-.318 1.885-.687 2.683a6.42 6.42 0 01-1.464 2.04 6.235 6.235 0 01-2.129 1.287c-.813.295-1.707.444-2.683.444-1.212 0-2.303-.211-3.271-.633a7.001 7.001 0 01-2.451-1.741 7.696 7.696 0 01-1.53-2.606C.925 10.59.748 9.514.748 8.361c0-1.183.177-2.281.532-3.294a7.898 7.898 0 011.53-2.65A6.983 6.983 0 015.261.642C6.229.215 7.32 0 8.532 0a7.99 7.99 0 012.473.377 6.686 6.686 0 012.085 1.098 5.938 5.938 0 011.519 1.785c.4.71.651 1.523.754 2.439h-3.371a2.862 2.862 0 00-.399-1.097zM20.463 13.462c.472.458 1.153.687 2.04.687.636 0 1.183-.159 1.641-.477.458-.317.739-.654.843-1.009h2.773c-.444 1.375-1.124 2.359-2.041 2.95-.917.591-2.026.887-3.327.887-.902 0-1.715-.144-2.439-.432a5.08 5.08 0 01-1.841-1.231 5.527 5.527 0 01-1.165-1.907c-.274-.739-.41-1.553-.41-2.439 0-.857.14-1.656.421-2.395a5.61 5.61 0 011.198-1.918 5.646 5.646 0 011.852-1.275c.717-.311 1.512-.466 2.384-.466.976 0 1.826.189 2.551.565a5.105 5.105 0 011.785 1.52 6.26 6.26 0 011.01 2.173c.206.813.28 1.663.221 2.55h-8.272c.045 1.019.303 1.759.776 2.217zm3.56-6.032c-.378-.413-.951-.621-1.719-.621-.503 0-.921.086-1.253.255-.333.17-.599.381-.798.632-.2.252-.341.518-.422.799-.081.281-.13.532-.144.754h5.123c-.147-.8-.41-1.406-.787-1.819zM32.372 4.746v2.129h.045c.148-.355.347-.684.599-.987.251-.303.54-.562.865-.776a4.223 4.223 0 011.043-.499 3.77 3.77 0 011.153-.177c.207 0 .436.037.688.111v2.927a6.276 6.276 0 00-1.131-.111c-.577 0-1.064.097-1.464.288-.4.192-.722.454-.965.787a3.153 3.153 0 00-.521 1.164 6.367 6.367 0 00-.155 1.441v5.168H29.38V4.746h2.992zM45.191 4.746v2.107h-2.307v5.677c0 .533.09.887.267 1.065.177.177.532.266 1.063.266.177 0 .348-.008.511-.023.162-.014.317-.036.466-.066v2.44a7.431 7.431 0 01-.888.088c-.324.015-.642.023-.953.023-.488 0-.951-.034-1.387-.1a3.251 3.251 0 01-1.153-.388 2.06 2.06 0 01-.788-.822c-.192-.355-.287-.82-.287-1.396V6.853h-1.908V4.746h1.908V1.309h3.148v3.438h2.308zM46.787 2.972V.377h3.149v2.595h-3.149zm3.15 1.774v11.466h-3.149V4.746h3.149zM51.223 6.853V4.746h1.885v-.887c0-1.02.317-1.855.953-2.506.636-.651 1.598-.976 2.884-.976.28 0 .562.011.843.033.279.022.553.041.819.055v2.351a9.546 9.546 0 00-1.153-.067c-.428 0-.736.1-.92.3-.185.199-.277.536-.277 1.009v.687h2.172v2.107h-2.172v9.359h-3.149V6.853h-1.885zM60.338 2.972V.377h3.15v2.595h-3.15zm3.15 1.774v11.466h-3.15V4.746h3.15zM68.454 13.462c.474.458 1.154.687 2.04.687.636 0 1.183-.159 1.641-.477.459-.317.74-.654.843-1.009h2.772c-.442 1.375-1.124 2.359-2.039 2.95-.919.591-2.026.887-3.327.887-.903 0-1.715-.144-2.44-.432a5.067 5.067 0 01-1.84-1.231 5.525 5.525 0 01-1.164-1.907c-.273-.739-.411-1.553-.411-2.439 0-.857.141-1.656.422-2.395a5.607 5.607 0 011.197-1.918 5.631 5.631 0 011.851-1.275c.718-.311 1.512-.466 2.385-.466.976 0 1.826.189 2.551.565a5.105 5.105 0 011.785 1.52 6.22 6.22 0 011.008 2.173c.208.813.281 1.663.222 2.55h-8.272c.045 1.019.303 1.759.776 2.217zm3.559-6.032c-.376-.413-.951-.621-1.718-.621-.503 0-.92.086-1.253.255a2.33 2.33 0 00-1.22 1.431 3.574 3.574 0 00-.143.754h5.122c-.147-.8-.41-1.406-.788-1.819zM85.51 14.748c-.371.621-.855 1.069-1.454 1.342-.598.274-1.274.41-2.029.41-.859 0-1.611-.166-2.262-.499a4.53 4.53 0 01-1.608-1.353 6.093 6.093 0 01-.953-1.962 8.252 8.252 0 01-.321-2.307c0-.768.106-1.512.321-2.229a5.806 5.806 0 01.953-1.897c.421-.546.95-.986 1.586-1.319.636-.333 1.375-.499 2.218-.499.681 0 1.327.144 1.939.432a3.388 3.388 0 011.454 1.276h.044V.377h3.149v15.835h-2.994v-1.464h-.043zm-.135-5.667a3.357 3.357 0 00-.454-1.153 2.556 2.556 0 00-.832-.81c-.34-.207-.768-.31-1.286-.31s-.954.103-1.309.31a2.481 2.481 0 00-.854.822c-.214.34-.369.728-.465 1.164a6.266 6.266 0 00-.144 1.364c0 .443.051.887.154 1.33.104.444.271.84.5 1.187.23.348.517.629.865.843.347.215.765.321 1.253.321.517 0 .95-.103 1.297-.311.347-.207.624-.484.831-.832a3.73 3.73 0 00.443-1.186c.089-.444.134-.902.134-1.375a6.61 6.61 0 00-.133-1.364zM25.784 41.965h18.357c4.466 0 10.35 0 13.396 1.843 3.331 1.984 5.952 5.598 5.952 10.561 0 5.385-2.833 9.426-7.511 11.338v.142c6.24 1.276 9.638 5.955 9.638 12.192 0 7.439-5.317 14.528-15.379 14.528H25.784V41.965zm6.729 21.758h13.473c7.653 0 10.773-2.763 10.773-8.079 0-7.019-4.96-8.008-10.773-8.008H32.513v16.087zm0 23.176h16.875c5.81 0 9.496-3.544 9.496-9.073 0-6.591-5.315-8.433-10.988-8.433H32.513v17.506z" />
+            <path
+              d="M82.832 67.289c0 21.259-17.232 38.492-38.494 38.492-21.258 0-38.491-17.233-38.491-38.492C5.847 46.032 23.08 28.8 44.338 28.8c21.262 0 38.494 17.232 38.494 38.489zm-38.494-44.36C19.852 22.929 0 42.78 0 67.267c0 24.486 19.852 44.337 44.338 44.337 24.49 0 44.341-19.851 44.341-44.337 0-24.487-19.851-44.338-44.341-44.338zM8.185 121.182c-.159-1.114-1.226-1.963-2.451-1.963-2.213 0-3.046 1.885-3.046 3.848 0 1.866.833 3.75 3.046 3.75 1.505 0 2.358-1.036 2.542-2.512h2.39c-.253 2.795-2.184 4.584-4.932 4.584-3.468 0-5.508-2.59-5.508-5.822 0-3.33 2.04-5.92 5.508-5.92 2.465 0 4.536 1.445 4.836 4.035H8.185zM15.811 120.289c2.559 0 4.208 1.693 4.208 4.284 0 2.574-1.648 4.27-4.208 4.27-2.543 0-4.19-1.695-4.19-4.27 0-2.591 1.647-4.284 4.19-4.284zm0 6.874c1.523 0 1.977-1.303 1.977-2.589 0-1.302-.455-2.605-1.977-2.605-1.506 0-1.964 1.303-1.964 2.605 0 1.286.458 2.589 1.964 2.589zM21.305 120.508h2.117v1.506h.032c.407-1.019 1.507-1.725 2.592-1.725.156 0 .343.03.487.077v2.072a4.128 4.128 0 00-.801-.076c-1.635 0-2.201 1.177-2.201 2.604v3.658h-2.226v-8.116zM27.724 120.508h2.121v1.035h.03c.533-.863 1.411-1.254 2.415-1.254 2.546 0 3.689 2.055 3.689 4.362 0 2.167-1.191 4.193-3.563 4.193-.973 0-1.898-.424-2.431-1.225h-.033v3.862h-2.228v-10.973zm6.027 4.082c0-1.29-.518-2.622-1.946-2.622-1.46 0-1.93 1.303-1.93 2.622 0 1.317.502 2.572 1.946 2.572 1.461.001 1.93-1.255 1.93-2.572zM41.252 120.289c2.56 0 4.211 1.693 4.211 4.284 0 2.574-1.651 4.27-4.211 4.27-2.542 0-4.189-1.695-4.189-4.27 0-2.591 1.647-4.284 4.189-4.284zm0 6.874c1.523 0 1.979-1.303 1.979-2.589 0-1.302-.456-2.605-1.979-2.605-1.505 0-1.962 1.303-1.962 2.605 0 1.286.457 2.589 1.962 2.589zM46.906 120.508h2.119v1.506h.034c.406-1.019 1.505-1.725 2.588-1.725.156 0 .346.03.487.077v2.072a4.09 4.09 0 00-.801-.076c-1.632 0-2.198 1.177-2.198 2.604v3.658h-2.229v-8.116zM52.916 123.004c.127-2.089 1.994-2.715 3.816-2.715 1.615 0 3.564.36 3.564 2.304v4.224c0 .739.077 1.475.284 1.806h-2.263a3.548 3.548 0 01-.159-.786c-.704.74-1.739 1.006-2.729 1.006-1.539 0-2.762-.769-2.762-2.435 0-1.835 1.383-2.274 2.762-2.463 1.366-.205 2.639-.157 2.639-1.069 0-.955-.663-1.097-1.445-1.097-.848 0-1.396.345-1.477 1.225h-2.23zm5.151 1.647c-.38.332-1.163.345-1.854.472-.691.139-1.319.378-1.319 1.193 0 .832.644 1.035 1.367 1.035 1.74 0 1.806-1.379 1.806-1.867v-.833zM64.845 120.508h1.633v1.491h-1.633v4.016c0 .756.189.944.941.944.236 0 .457-.016.692-.061v1.742c-.379.063-.866.078-1.305.078-1.362 0-2.555-.316-2.555-1.932v-4.787h-1.352v-1.491h1.352v-2.435h2.227v2.435zM69.837 119.252h-2.229v-1.838h2.229v1.838zm-2.229 1.256h2.229v8.116h-2.229v-8.116zM75.218 120.289c2.561 0 4.212 1.693 4.212 4.284 0 2.574-1.651 4.27-4.212 4.27-2.54 0-4.187-1.695-4.187-4.27 0-2.591 1.646-4.284 4.187-4.284zm0 6.874c1.526 0 1.98-1.303 1.98-2.589 0-1.302-.454-2.605-1.98-2.605-1.506 0-1.962 1.303-1.962 2.605 0 1.286.456 2.589 1.962 2.589zM80.869 120.508h2.12v1.131h.047c.565-.911 1.539-1.35 2.481-1.35 2.37 0 2.966 1.333 2.966 3.343v4.992h-2.229v-4.585c0-1.333-.393-1.995-1.427-1.995-1.211 0-1.728.677-1.728 2.325v4.254H80.87v-8.115zM.165 135.528h88.391v5.655H.165zM90.489 118.851a1.12 1.12 0 01-.822.341c-.321 0-.595-.114-.821-.341a1.128 1.128 0 01-.337-.824c0-.318.114-.592.341-.818.225-.227.496-.338.817-.338.32 0 .595.112.822.338.227.225.339.498.339.818 0 .322-.112.597-.339.824zm-1.527-1.528a.965.965 0 00-.291.707c0 .277.096.516.289.711.195.195.43.294.708.294a.952.952 0 00.705-.294.97.97 0 00.292-.711.962.962 0 00-.292-.707.962.962 0 00-.705-.294.957.957 0 00-.706.294zm.683.064c.158 0 .273.017.348.046.131.054.197.162.197.322 0 .115-.041.199-.124.252a.483.483 0 01-.184.062.31.31 0 01.219.125.358.358 0 01.068.198v.093c0 .03.001.062.004.094a.178.178 0 00.011.066l.007.015h-.211l-.002-.011-.003-.015-.005-.041v-.1c0-.147-.04-.245-.12-.292a.55.55 0 00-.251-.041h-.176v.501h-.224v-1.274h.446zm.242.201a.591.591 0 00-.272-.047h-.191v.461h.203a.643.643 0 00.214-.026c.088-.037.132-.101.132-.201-.001-.093-.03-.154-.086-.187z" />
+          </svg>
+          <p class="copyright">
+            © 2019 Wholly, Inc. All Rights Reserved. <a href="#">Terms</a>,
+            <a href="#">Privacy</a>, & <a href="#">Accessibility</a>.
           </p>
-          <form action="submit">
-            <input type="email" placeholder="kim@daily.com" />
-            <button>Sign up</button>
-          </form>
-        </div>
-        <div class="footer">
-          <div class="menus grid">
-            <div>
-              <h5>Help</h5>
-              <ul>
-                <li><a href="#">1 888 424 3689</a></li>
-                <li><a href="#">help@wholly.com</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Dosage Recommendations</a></li>
-              </ul>
-            </div>
-            <div>
-              <h5>Shop</h5>
-              <ul>
-                <li><a href="#">Sleep </a></li>
-                <li><a href="#">Focus</a></li>
-                <li><a href="#">Socialize</a></li>
-                <li><a href="#">Selfcare Kickstart</a></li>
-                <li><a href="#">Giftcards</a></li>
-              </ul>
-            </div>
-            <div>
-              <h5>Company</h5>
-              <ul>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Sustainability</a></li>
-                <li><a href="#">Prison Policy Partnership</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Become a Wholly Co•op Farmer</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="legal">
-            <svg
-              class="bcorp"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 90.828 141.183"
-            >
-              <path
-                d="M11.593 4.602a3.534 3.534 0 00-1.83-1.464 3.631 3.631 0 00-1.231-.21c-.783 0-1.449.152-1.996.455-.547.304-.99.71-1.33 1.22a5.315 5.315 0 00-.743 1.741 8.61 8.61 0 00-.233 2.017c0 .665.077 1.312.233 1.94.155.628.403 1.194.743 1.697.34.503.783.905 1.33 1.209.547.303 1.213.455 1.996.455 1.065 0 1.896-.325 2.495-.975.599-.651.965-1.508 1.098-2.572h3.371c-.089.99-.318 1.885-.687 2.683a6.42 6.42 0 01-1.464 2.04 6.235 6.235 0 01-2.129 1.287c-.813.295-1.707.444-2.683.444-1.212 0-2.303-.211-3.271-.633a7.001 7.001 0 01-2.451-1.741 7.696 7.696 0 01-1.53-2.606C.925 10.59.748 9.514.748 8.361c0-1.183.177-2.281.532-3.294a7.898 7.898 0 011.53-2.65A6.983 6.983 0 015.261.642C6.229.215 7.32 0 8.532 0a7.99 7.99 0 012.473.377 6.686 6.686 0 012.085 1.098 5.938 5.938 0 011.519 1.785c.4.71.651 1.523.754 2.439h-3.371a2.862 2.862 0 00-.399-1.097zM20.463 13.462c.472.458 1.153.687 2.04.687.636 0 1.183-.159 1.641-.477.458-.317.739-.654.843-1.009h2.773c-.444 1.375-1.124 2.359-2.041 2.95-.917.591-2.026.887-3.327.887-.902 0-1.715-.144-2.439-.432a5.08 5.08 0 01-1.841-1.231 5.527 5.527 0 01-1.165-1.907c-.274-.739-.41-1.553-.41-2.439 0-.857.14-1.656.421-2.395a5.61 5.61 0 011.198-1.918 5.646 5.646 0 011.852-1.275c.717-.311 1.512-.466 2.384-.466.976 0 1.826.189 2.551.565a5.105 5.105 0 011.785 1.52 6.26 6.26 0 011.01 2.173c.206.813.28 1.663.221 2.55h-8.272c.045 1.019.303 1.759.776 2.217zm3.56-6.032c-.378-.413-.951-.621-1.719-.621-.503 0-.921.086-1.253.255-.333.17-.599.381-.798.632-.2.252-.341.518-.422.799-.081.281-.13.532-.144.754h5.123c-.147-.8-.41-1.406-.787-1.819zM32.372 4.746v2.129h.045c.148-.355.347-.684.599-.987.251-.303.54-.562.865-.776a4.223 4.223 0 011.043-.499 3.77 3.77 0 011.153-.177c.207 0 .436.037.688.111v2.927a6.276 6.276 0 00-1.131-.111c-.577 0-1.064.097-1.464.288-.4.192-.722.454-.965.787a3.153 3.153 0 00-.521 1.164 6.367 6.367 0 00-.155 1.441v5.168H29.38V4.746h2.992zM45.191 4.746v2.107h-2.307v5.677c0 .533.09.887.267 1.065.177.177.532.266 1.063.266.177 0 .348-.008.511-.023.162-.014.317-.036.466-.066v2.44a7.431 7.431 0 01-.888.088c-.324.015-.642.023-.953.023-.488 0-.951-.034-1.387-.1a3.251 3.251 0 01-1.153-.388 2.06 2.06 0 01-.788-.822c-.192-.355-.287-.82-.287-1.396V6.853h-1.908V4.746h1.908V1.309h3.148v3.438h2.308zM46.787 2.972V.377h3.149v2.595h-3.149zm3.15 1.774v11.466h-3.149V4.746h3.149zM51.223 6.853V4.746h1.885v-.887c0-1.02.317-1.855.953-2.506.636-.651 1.598-.976 2.884-.976.28 0 .562.011.843.033.279.022.553.041.819.055v2.351a9.546 9.546 0 00-1.153-.067c-.428 0-.736.1-.92.3-.185.199-.277.536-.277 1.009v.687h2.172v2.107h-2.172v9.359h-3.149V6.853h-1.885zM60.338 2.972V.377h3.15v2.595h-3.15zm3.15 1.774v11.466h-3.15V4.746h3.15zM68.454 13.462c.474.458 1.154.687 2.04.687.636 0 1.183-.159 1.641-.477.459-.317.74-.654.843-1.009h2.772c-.442 1.375-1.124 2.359-2.039 2.95-.919.591-2.026.887-3.327.887-.903 0-1.715-.144-2.44-.432a5.067 5.067 0 01-1.84-1.231 5.525 5.525 0 01-1.164-1.907c-.273-.739-.411-1.553-.411-2.439 0-.857.141-1.656.422-2.395a5.607 5.607 0 011.197-1.918 5.631 5.631 0 011.851-1.275c.718-.311 1.512-.466 2.385-.466.976 0 1.826.189 2.551.565a5.105 5.105 0 011.785 1.52 6.22 6.22 0 011.008 2.173c.208.813.281 1.663.222 2.55h-8.272c.045 1.019.303 1.759.776 2.217zm3.559-6.032c-.376-.413-.951-.621-1.718-.621-.503 0-.92.086-1.253.255a2.33 2.33 0 00-1.22 1.431 3.574 3.574 0 00-.143.754h5.122c-.147-.8-.41-1.406-.788-1.819zM85.51 14.748c-.371.621-.855 1.069-1.454 1.342-.598.274-1.274.41-2.029.41-.859 0-1.611-.166-2.262-.499a4.53 4.53 0 01-1.608-1.353 6.093 6.093 0 01-.953-1.962 8.252 8.252 0 01-.321-2.307c0-.768.106-1.512.321-2.229a5.806 5.806 0 01.953-1.897c.421-.546.95-.986 1.586-1.319.636-.333 1.375-.499 2.218-.499.681 0 1.327.144 1.939.432a3.388 3.388 0 011.454 1.276h.044V.377h3.149v15.835h-2.994v-1.464h-.043zm-.135-5.667a3.357 3.357 0 00-.454-1.153 2.556 2.556 0 00-.832-.81c-.34-.207-.768-.31-1.286-.31s-.954.103-1.309.31a2.481 2.481 0 00-.854.822c-.214.34-.369.728-.465 1.164a6.266 6.266 0 00-.144 1.364c0 .443.051.887.154 1.33.104.444.271.84.5 1.187.23.348.517.629.865.843.347.215.765.321 1.253.321.517 0 .95-.103 1.297-.311.347-.207.624-.484.831-.832a3.73 3.73 0 00.443-1.186c.089-.444.134-.902.134-1.375a6.61 6.61 0 00-.133-1.364zM25.784 41.965h18.357c4.466 0 10.35 0 13.396 1.843 3.331 1.984 5.952 5.598 5.952 10.561 0 5.385-2.833 9.426-7.511 11.338v.142c6.24 1.276 9.638 5.955 9.638 12.192 0 7.439-5.317 14.528-15.379 14.528H25.784V41.965zm6.729 21.758h13.473c7.653 0 10.773-2.763 10.773-8.079 0-7.019-4.96-8.008-10.773-8.008H32.513v16.087zm0 23.176h16.875c5.81 0 9.496-3.544 9.496-9.073 0-6.591-5.315-8.433-10.988-8.433H32.513v17.506z"
-              />
-              <path
-                d="M82.832 67.289c0 21.259-17.232 38.492-38.494 38.492-21.258 0-38.491-17.233-38.491-38.492C5.847 46.032 23.08 28.8 44.338 28.8c21.262 0 38.494 17.232 38.494 38.489zm-38.494-44.36C19.852 22.929 0 42.78 0 67.267c0 24.486 19.852 44.337 44.338 44.337 24.49 0 44.341-19.851 44.341-44.337 0-24.487-19.851-44.338-44.341-44.338zM8.185 121.182c-.159-1.114-1.226-1.963-2.451-1.963-2.213 0-3.046 1.885-3.046 3.848 0 1.866.833 3.75 3.046 3.75 1.505 0 2.358-1.036 2.542-2.512h2.39c-.253 2.795-2.184 4.584-4.932 4.584-3.468 0-5.508-2.59-5.508-5.822 0-3.33 2.04-5.92 5.508-5.92 2.465 0 4.536 1.445 4.836 4.035H8.185zM15.811 120.289c2.559 0 4.208 1.693 4.208 4.284 0 2.574-1.648 4.27-4.208 4.27-2.543 0-4.19-1.695-4.19-4.27 0-2.591 1.647-4.284 4.19-4.284zm0 6.874c1.523 0 1.977-1.303 1.977-2.589 0-1.302-.455-2.605-1.977-2.605-1.506 0-1.964 1.303-1.964 2.605 0 1.286.458 2.589 1.964 2.589zM21.305 120.508h2.117v1.506h.032c.407-1.019 1.507-1.725 2.592-1.725.156 0 .343.03.487.077v2.072a4.128 4.128 0 00-.801-.076c-1.635 0-2.201 1.177-2.201 2.604v3.658h-2.226v-8.116zM27.724 120.508h2.121v1.035h.03c.533-.863 1.411-1.254 2.415-1.254 2.546 0 3.689 2.055 3.689 4.362 0 2.167-1.191 4.193-3.563 4.193-.973 0-1.898-.424-2.431-1.225h-.033v3.862h-2.228v-10.973zm6.027 4.082c0-1.29-.518-2.622-1.946-2.622-1.46 0-1.93 1.303-1.93 2.622 0 1.317.502 2.572 1.946 2.572 1.461.001 1.93-1.255 1.93-2.572zM41.252 120.289c2.56 0 4.211 1.693 4.211 4.284 0 2.574-1.651 4.27-4.211 4.27-2.542 0-4.189-1.695-4.189-4.27 0-2.591 1.647-4.284 4.189-4.284zm0 6.874c1.523 0 1.979-1.303 1.979-2.589 0-1.302-.456-2.605-1.979-2.605-1.505 0-1.962 1.303-1.962 2.605 0 1.286.457 2.589 1.962 2.589zM46.906 120.508h2.119v1.506h.034c.406-1.019 1.505-1.725 2.588-1.725.156 0 .346.03.487.077v2.072a4.09 4.09 0 00-.801-.076c-1.632 0-2.198 1.177-2.198 2.604v3.658h-2.229v-8.116zM52.916 123.004c.127-2.089 1.994-2.715 3.816-2.715 1.615 0 3.564.36 3.564 2.304v4.224c0 .739.077 1.475.284 1.806h-2.263a3.548 3.548 0 01-.159-.786c-.704.74-1.739 1.006-2.729 1.006-1.539 0-2.762-.769-2.762-2.435 0-1.835 1.383-2.274 2.762-2.463 1.366-.205 2.639-.157 2.639-1.069 0-.955-.663-1.097-1.445-1.097-.848 0-1.396.345-1.477 1.225h-2.23zm5.151 1.647c-.38.332-1.163.345-1.854.472-.691.139-1.319.378-1.319 1.193 0 .832.644 1.035 1.367 1.035 1.74 0 1.806-1.379 1.806-1.867v-.833zM64.845 120.508h1.633v1.491h-1.633v4.016c0 .756.189.944.941.944.236 0 .457-.016.692-.061v1.742c-.379.063-.866.078-1.305.078-1.362 0-2.555-.316-2.555-1.932v-4.787h-1.352v-1.491h1.352v-2.435h2.227v2.435zM69.837 119.252h-2.229v-1.838h2.229v1.838zm-2.229 1.256h2.229v8.116h-2.229v-8.116zM75.218 120.289c2.561 0 4.212 1.693 4.212 4.284 0 2.574-1.651 4.27-4.212 4.27-2.54 0-4.187-1.695-4.187-4.27 0-2.591 1.646-4.284 4.187-4.284zm0 6.874c1.526 0 1.98-1.303 1.98-2.589 0-1.302-.454-2.605-1.98-2.605-1.506 0-1.962 1.303-1.962 2.605 0 1.286.456 2.589 1.962 2.589zM80.869 120.508h2.12v1.131h.047c.565-.911 1.539-1.35 2.481-1.35 2.37 0 2.966 1.333 2.966 3.343v4.992h-2.229v-4.585c0-1.333-.393-1.995-1.427-1.995-1.211 0-1.728.677-1.728 2.325v4.254H80.87v-8.115zM.165 135.528h88.391v5.655H.165zM90.489 118.851a1.12 1.12 0 01-.822.341c-.321 0-.595-.114-.821-.341a1.128 1.128 0 01-.337-.824c0-.318.114-.592.341-.818.225-.227.496-.338.817-.338.32 0 .595.112.822.338.227.225.339.498.339.818 0 .322-.112.597-.339.824zm-1.527-1.528a.965.965 0 00-.291.707c0 .277.096.516.289.711.195.195.43.294.708.294a.952.952 0 00.705-.294.97.97 0 00.292-.711.962.962 0 00-.292-.707.962.962 0 00-.705-.294.957.957 0 00-.706.294zm.683.064c.158 0 .273.017.348.046.131.054.197.162.197.322 0 .115-.041.199-.124.252a.483.483 0 01-.184.062.31.31 0 01.219.125.358.358 0 01.068.198v.093c0 .03.001.062.004.094a.178.178 0 00.011.066l.007.015h-.211l-.002-.011-.003-.015-.005-.041v-.1c0-.147-.04-.245-.12-.292a.55.55 0 00-.251-.041h-.176v.501h-.224v-1.274h.446zm.242.201a.591.591 0 00-.272-.047h-.191v.461h.203a.643.643 0 00.214-.026c.088-.037.132-.101.132-.201-.001-.093-.03-.154-.086-.187z"
-              />
-            </svg>
-            <p class="copyright">
-              © 2019 Wholly, Inc. All Rights Reserved. <a href="#">Terms</a>,
-              <a href="#">Privacy</a>, & <a href="#">Accessibility</a>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <div class="footer-footer">
-      <div class="container">
-        <a href="#"
-          ><h2>w<span class="hom">holly</span></h2></a
-        >
-        <div>
-          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-          </ul>
         </div>
       </div>
     </div>
+  </footer>
 
-    <script>
-      var scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 800,
-        speedAsDuration: true,
-        offset:
-          getComputedStyle(document.body)
-            .getPropertyValue("--header-height")
-            .replace(/\D/g, "") / 1.75
-      });
-    </script>
-    <script>
-      const header = document.querySelector("header");
-      const originalHeaderHeight = getComputedStyle(document.body)
+  <div class="footer-footer">
+    <div class="container">
+      <a href="#">
+        <h2>w<span class="hom">holly</span></h2>
+      </a>
+      <div>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 800,
+      speedAsDuration: true,
+      offset: getComputedStyle(document.body)
         .getPropertyValue("--header-height")
-        .replace(/\D/g, "");
+        .replace(/\D/g, "") / 1.75
+    });
+  </script>
+  <script>
+    const header = document.querySelector("header");
+    const originalHeaderHeight = getComputedStyle(document.body)
+      .getPropertyValue("--header-height")
+      .replace(/\D/g, "");
 
-      window.addEventListener("scroll", function() {
-        if (window.scrollY >= originalHeaderHeight) {
-          header.classList.add("is-scrolled");
-          // animLogo.setDirection(1);
-          // animLogo.setSpeed(1.25);
-          // animLogo.play();
-        } else {
-          header.classList.remove("is-scrolled");
-          // animLogo.setDirection(-1);
-          // animLogo.setSpeed(1.25);
-          // animLogo.play();
-        }
-      });
-    </script>
-    <script>
-      const nav = document.querySelector(".nav");
-      const hamburger = document.getElementById("hamburger");
+    window.addEventListener("scroll", function () {
+      if (window.scrollY >= originalHeaderHeight) {
+        header.classList.add("is-scrolled");
+        // animLogo.setDirection(1);
+        // animLogo.setSpeed(1.25);
+        // animLogo.play();
+      } else {
+        header.classList.remove("is-scrolled");
+        // animLogo.setDirection(-1);
+        // animLogo.setSpeed(1.25);
+        // animLogo.play();
+      }
+    });
+  </script>
+  <script>
+    const nav = document.querySelector(".nav");
+    const hamburger = document.getElementById("hamburger");
 
-      hamburger.onclick = () => {
-        nav.classList.toggle("active");
-        hamburger.classList.toggle("active");
-        // check if hamburger menu is active in order to freeze scrolling
-        if (hamburger.offsetParent) {
-          document.body.classList.toggle("no-scroll");
-        }
+    hamburger.onclick = () => {
+      nav.classList.toggle("active");
+      hamburger.classList.toggle("active");
+      // check if hamburger menu is active in order to freeze scrolling
+      if (hamburger.offsetParent) {
+        document.body.classList.toggle("no-scroll");
+      }
+    };
+
+    [...nav.children].forEach(node => {
+      node.childNodes[0].onclick = () => {
+        hamburger.click();
       };
+    });
+  </script>
+  <script>
+    const randomizeButton = document.getElementById("randomize");
 
-      [...nav.children].forEach(node => {
-        node.childNodes[0].onclick = () => {
-          hamburger.click();
-        };
+    const flavors = document.querySelectorAll("input[name='flavor']");
+    const doses = document.querySelectorAll("input[name='dose']");
+    const sizes = document.querySelectorAll("input[name='size']");
+
+    const inputs = [...flavors, ...doses, ...sizes];
+
+    const flavorOutput = document.getElementById("your-flavor");
+    const doseOutput = document.getElementById("your-dose");
+    const sizeOutput = document.getElementById("your-size");
+    const ingredientsOutput = document.getElementById("your-ingredients");
+    const thcOutput = document.getElementById("your-thc");
+    const cbdOutput = document.getElementById("your-cbd");
+    const countOutput = document.getElementById("your-count");
+
+    const helperText = document.querySelector(".helper-text");
+    const results = document.querySelector(".results").querySelector(".grid");
+
+    function getRandom(min, max) {
+      return Math.round(Math.random() * (max - min) + min);
+    }
+
+    randomizeButton.addEventListener("click", event => {
+      // TODO: force a _new_ random selection
+      const flavor = getRandom(0, flavors.length - 1);
+
+      flavors.forEach(flavor => flavor.setAttribute("checked", false));
+      flavors[flavor].click();
+      doses[0].click();
+      sizes[0].click();
+    });
+
+    inputs.forEach(input => {
+      input.addEventListener("click", event => {
+        setInnerHTML(event);
+        revealResults(event);
       });
-    </script>
-    <script>
-      const randomizeButton = document.getElementById("randomize");
+    });
 
-      const flavors = document.querySelectorAll("input[name='flavor']");
-      const doses = document.querySelectorAll("input[name='dose']");
-      const sizes = document.querySelectorAll("input[name='size']");
-
-      const inputs = [...flavors, ...doses, ...sizes];
-
-      const flavorOutput = document.getElementById("your-flavor");
-      const doseOutput = document.getElementById("your-dose");
-      const sizeOutput = document.getElementById("your-size");
-      const ingredientsOutput = document.getElementById("your-ingredients");
-      const thcOutput = document.getElementById("your-thc");
-      const cbdOutput = document.getElementById("your-cbd");
-      const countOutput = document.getElementById("your-count");
-
-      const helperText = document.querySelector(".helper-text");
-      const results = document.querySelector(".results").querySelector(".grid");
-
-      function getRandom(min, max) {
-        return Math.round(Math.random() * (max - min) + min);
+    function setInnerHTML(event) {
+      if (event.target.getAttribute("name") === "flavor") {
+        handleFlavor(event);
+      } else if (event.target.getAttribute("name") === "dose") {
+        handleDose(event);
+      } else if (event.target.getAttribute("name") === "size") {
+        handleSize(event);
       }
+    }
 
-      randomizeButton.addEventListener("click", event => {
-        // TODO: force a _new_ random selection
-        const flavor = getRandom(0, flavors.length - 1);
-
-        flavors.forEach(flavor => flavor.setAttribute("checked", false));
-        flavors[flavor].click();
-        doses[0].click();
-        sizes[0].click();
-      });
-
-      inputs.forEach(input => {
-        input.addEventListener("click", event => {
-          setInnerHTML(event);
-          revealResults(event);
-        });
-      });
-
-      function setInnerHTML(event) {
-        if (event.target.getAttribute("name") === "flavor") {
-          handleFlavor(event);
-        } else if (event.target.getAttribute("name") === "dose") {
-          handleDose(event);
-        } else if (event.target.getAttribute("name") === "size") {
-          handleSize(event);
-        }
+    function handleFlavor(event) {
+      flavorOutput.innerHTML = event.target.getAttribute("value");
+      if (event.target.getAttribute("id") === "unflavored") {
+        ingredientsOutput.innerHTML = flavorsData.unflavored;
+      } else if (event.target.getAttribute("id") === "lemon") {
+        ingredientsOutput.innerHTML = flavorsData.lemon;
+      } else if (event.target.getAttribute("id") === "honey-chamomile") {
+        ingredientsOutput.innerHTML = flavorsData.honeyChamomile;
+      } else if (event.target.getAttribute("id") === "star-anise") {
+        ingredientsOutput.innerHTML = flavorsData.starAnise;
       }
+    }
 
-      function handleFlavor(event) {
-        flavorOutput.innerHTML = event.target.getAttribute("value");
-        if (event.target.getAttribute("id") === "unflavored") {
-          ingredientsOutput.innerHTML = flavorsData.unflavored;
-        } else if (event.target.getAttribute("id") === "lemon") {
-          ingredientsOutput.innerHTML = flavorsData.lemon;
-        } else if (event.target.getAttribute("id") === "honey-chamomile") {
-          ingredientsOutput.innerHTML = flavorsData.honeyChamomile;
-        } else if (event.target.getAttribute("id") === "star-anise") {
-          ingredientsOutput.innerHTML = flavorsData.starAnise;
-        }
+    function handleDose(event) {
+      doseOutput.innerHTML = event.target.getAttribute("value");
+      if (event.target.getAttribute("id") === "light") {
+        thcOutput.innerHTML = dosesData.light.thc;
+        cbdOutput.innerHTML = dosesData.light.cbd;
+      } else if (event.target.getAttribute("id") === "medium-d") {
+        thcOutput.innerHTML = dosesData.medium.thc;
+        cbdOutput.innerHTML = dosesData.medium.cbd;
+      } else if (event.target.getAttribute("id") === "strong") {
+        thcOutput.innerHTML = dosesData.strong.thc;
+        cbdOutput.innerHTML = dosesData.strong.cbd;
       }
+    }
 
-      function handleDose(event) {
-        doseOutput.innerHTML = event.target.getAttribute("value");
-        if (event.target.getAttribute("id") === "light") {
-          thcOutput.innerHTML = dosesData.light.thc;
-          cbdOutput.innerHTML = dosesData.light.cbd;
-        } else if (event.target.getAttribute("id") === "medium-d") {
-          thcOutput.innerHTML = dosesData.medium.thc;
-          cbdOutput.innerHTML = dosesData.medium.cbd;
-        } else if (event.target.getAttribute("id") === "strong") {
-          thcOutput.innerHTML = dosesData.strong.thc;
-          cbdOutput.innerHTML = dosesData.strong.cbd;
-        }
+    function handleSize(event) {
+      if (event.target.getAttribute("id") === "small") {
+        countOutput.innerHTML = sizesData.small.count;
+        sizeOutput.innerHTML = sizesData.small.name;
+      } else if (event.target.getAttribute("id") === "medium-s") {
+        countOutput.innerHTML = sizesData.medium.count;
+        sizeOutput.innerHTML = sizesData.medium.name;
+      } else if (event.target.getAttribute("id") === "large") {
+        countOutput.innerHTML = sizesData.large.count;
+        sizeOutput.innerHTML = sizesData.large.name;
       }
+    }
 
-      function handleSize(event) {
-        if (event.target.getAttribute("id") === "small") {
-          countOutput.innerHTML = sizesData.small.count;
-          sizeOutput.innerHTML = sizesData.small.name;
-        } else if (event.target.getAttribute("id") === "medium-s") {
-          countOutput.innerHTML = sizesData.medium.count;
-          sizeOutput.innerHTML = sizesData.medium.name;
-        } else if (event.target.getAttribute("id") === "large") {
-          countOutput.innerHTML = sizesData.large.count;
-          sizeOutput.innerHTML = sizesData.large.name;
-        }
+    function revealResults(event) {
+      results.style.opacity = 1;
+      // either hide .helper-text or replace innerHTML text:
+      helperText.style.opacity = 0;
+      // helperText.innerHTML =
+      //   "Your customized <strong>Sleep Pack</strong> is below:";
+    }
+
+    const flavorsData = {
+      unflavored: "All natural extracts of nothing. This is unflavored.",
+      lemon: "All natural extracts of lemon, thyme, and hyssop.",
+      honeyChamomile: "All natural extracts of tea, baby.",
+      starAnise: "All natural extracts of space. Get it, 'star'?"
+    };
+
+    const dosesData = {
+      light: {
+        thc: 5,
+        cbd: 5
+      },
+      medium: {
+        thc: 10,
+        cbd: 10
+      },
+      strong: {
+        thc: 25,
+        cbd: 25
       }
+    };
 
-      function revealResults(event) {
-        results.style.opacity = 1;
-        // either hide .helper-text or replace innerHTML text:
-        helperText.style.opacity = 0;
-        // helperText.innerHTML =
-        //   "Your customized <strong>Sleep Pack</strong> is below:";
+    const sizesData = {
+      small: {
+        count: 100,
+        name: "SM"
+      },
+      medium: {
+        count: 200,
+        name: "MD"
+      },
+      large: {
+        count: 300,
+        name: "LG"
       }
+    };
+  </script>
+  <script>
+    const resultPlaceholder = document.querySelector(".results");
+    const resultActual = document.querySelector(".results .grid");
 
-      const flavorsData = {
-        unflavored: "All natural extracts of nothing. This is unflavored.",
-        lemon: "All natural extracts of lemon, thyme, and hyssop.",
-        honeyChamomile: "All natural extracts of tea, baby.",
-        starAnise: "All natural extracts of space. Get it, 'star'?"
-      };
+    console.log(resultPlaceholder);
+    console.log(resultActual);
 
-      const dosesData = {
-        light: {
-          thc: 123,
-          cbd: 555
-        },
-        medium: {
-          thc: 456,
-          cbd: 666
-        },
-        strong: {
-          thc: 789,
-          cbd: 999
-        }
-      };
+    resultPlaceholder.style.height = `${resultActual.offsetHeight}px`;
+  </script>
+</body>
 
-      const sizesData = {
-        small: {
-          count: 100,
-          name: "SM"
-        },
-        medium: {
-          count: 200,
-          name: "MD"
-        },
-        large: {
-          count: 300,
-          name: "LG"
-        }
-      };
-    </script>
-    <script>
-      const resultPlaceholder = document.querySelector(".results");
-      const resultActual = document.querySelector(".results .grid");
-
-      console.log(resultPlaceholder);
-      console.log(resultActual);
-
-      resultPlaceholder.style.height = `${resultActual.offsetHeight}px`;
-    </script>
-  </body>
 </html>
