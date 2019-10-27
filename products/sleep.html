@@ -171,7 +171,7 @@
           </div>
           <div>
             <h6 style="margin-top: 0;">Total</h6>
-            <div class="price">$9.<span>99</span></div>
+            <div class="price" id="your-price"></div>
             <div class="cashed-cta">
               <button>Add to cart</button>
               <button>
@@ -351,6 +351,11 @@
     const thcOutput = document.getElementById("your-thc");
     const cbdOutput = document.getElementById("your-cbd");
     const countOutput = document.getElementById("your-count");
+    const priceOutput = document.getElementById("your-price");
+
+    let basePrice = 40;
+    let dosePrice = 0;
+    let sizePrice = 0;
 
     const helperText = document.querySelector(".helper-text");
     const results = document.querySelector(".results").querySelector(".grid");
@@ -381,8 +386,10 @@
         handleFlavor(event);
       } else if (event.target.getAttribute("name") === "dose") {
         handleDose(event);
+        handlePrice(event);
       } else if (event.target.getAttribute("name") === "size") {
         handleSize(event);
+        handlePrice(event);
       }
     }
 
@@ -404,12 +411,15 @@
       if (event.target.getAttribute("id") === "light") {
         thcOutput.innerHTML = dosesData.light.thc;
         cbdOutput.innerHTML = dosesData.light.cbd;
+        dosePrice = dosesData.light.price;
       } else if (event.target.getAttribute("id") === "medium-d") {
         thcOutput.innerHTML = dosesData.medium.thc;
         cbdOutput.innerHTML = dosesData.medium.cbd;
+        dosePrice = dosesData.medium.price;
       } else if (event.target.getAttribute("id") === "strong") {
         thcOutput.innerHTML = dosesData.strong.thc;
         cbdOutput.innerHTML = dosesData.strong.cbd;
+        dosePrice = dosesData.strong.price;
       }
     }
 
@@ -417,13 +427,21 @@
       if (event.target.getAttribute("id") === "small") {
         countOutput.innerHTML = sizesData.small.count;
         sizeOutput.innerHTML = sizesData.small.name;
+        sizePrice = sizesData.small.price;
       } else if (event.target.getAttribute("id") === "medium-s") {
         countOutput.innerHTML = sizesData.medium.count;
         sizeOutput.innerHTML = sizesData.medium.name;
+        sizePrice = sizesData.medium.price;
       } else if (event.target.getAttribute("id") === "large") {
         countOutput.innerHTML = sizesData.large.count;
         sizeOutput.innerHTML = sizesData.large.name;
+        sizePrice = sizesData.large.price;
       }
+    }
+
+    function handlePrice(event) {
+      const totalPrice = basePrice + dosePrice + sizePrice;
+      priceOutput.innerHTML = `$${totalPrice}.<span>00</span>`;
     }
 
     function revealResults(event) {
@@ -444,30 +462,36 @@
     const dosesData = {
       light: {
         thc: 5,
-        cbd: 5
+        cbd: 5,
+        price: 5
       },
       medium: {
         thc: 10,
-        cbd: 10
+        cbd: 10,
+        price: 10
       },
       strong: {
         thc: 25,
-        cbd: 25
+        cbd: 25,
+        price: 15
       }
     };
 
     const sizesData = {
       small: {
         count: 30,
-        name: "SM"
+        name: "SM",
+        price: 10
       },
       medium: {
         count: 60,
-        name: "MD"
+        name: "MD",
+        price: 35
       },
       large: {
         count: 120,
-        name: "LG"
+        name: "LG",
+        price: 65
       }
     };
   </script>
